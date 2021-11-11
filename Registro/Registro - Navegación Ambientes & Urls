@@ -1,0 +1,92 @@
+id: kHhm_mifek62G2Z2ay4tFw
+projectId: pMTbqBsXcEO9XmbzOWMYTw
+projectName: Mi Firma_copy
+created: 2021-11-11T17:27:41.4841235Z
+protocol: 1
+tests:
+- id: hTDDypT25EqFQpt0NHgQLw
+  name: 'Registro - Navegación Ambientes & Urls '
+  description: This test was auto generated from steps of the 'Flujo Registro' test
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 1.0
+  creationDate: 2021-11-11T17:25:21.0000000
+  modificationDate: 2021-11-11T17:25:21.0000000
+  settings:
+    automationAssistant: true
+    appId: zCXBZ0EWr0C6dHTqV8WU0Q
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Always
+  application:
+    id: zCXBZ0EWr0C6dHTqV8WU0Q
+    name: Mi Firma
+    url: https://app.mifirma.co/
+    platform: Web
+  steps:
+  - id: kl5YU7UooUiSaBMnwKrL8A
+    comments: Navigates the specified URL (Auto-generated)
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: https://app.mifirma.co/
+      direction: Input
+    conditions:
+    - parameter: '[[Ambiente]]'
+      type: Contains
+      invert: false
+      value: produccion
+    validations: []
+    contexts: []
+  - id: -Ns9Q75VVUiwecXfJPOiAg
+    comments: Navigates the specified URL (Auto-generated)
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: https://mifirmapru.olimpiait.com:6570/
+      direction: Input
+    conditions:
+    - parameter: '[[Ambiente]]'
+      type: Contains
+      invert: false
+      value: pruebas
+    validations: []
+    contexts: []
+  parameters: []
+auxTests: []
+elements: []
+projectParameters:
+- id: Cuxs7XQrPU6_VOiIDHNUAQ
+  name: Ambiente
+  description: Necesario para conocer a cual ambiente queremos ejecutar los casos de pruebas, ya sea producción o pruebas.
+  value: produccion
+addons: []

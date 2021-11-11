@@ -1,0 +1,225 @@
+id: cdb8P50BI0KBAZ5eD6XqKA
+projectId: pMTbqBsXcEO9XmbzOWMYTw
+projectName: Mi Firma_copy
+created: 2021-11-11T17:27:41.4233607Z
+protocol: 1
+tests:
+- id: 7gpht4yLW0qT5pTV5QOsfw
+  name: Ingreso de código otp erróneo
+  description: This test was auto generated from steps of the 'Flujo Solo yo - Ingreso de código otp erróneo' test
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 1.0
+  creationDate: 2021-11-11T17:25:21.0000000
+  modificationDate: 2021-11-11T17:25:21.0000000
+  settings:
+    automationAssistant: true
+    appId: zCXBZ0EWr0C6dHTqV8WU0Q
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  application:
+    id: zCXBZ0EWr0C6dHTqV8WU0Q
+    name: Mi Firma
+    url: https://app.mifirma.co/
+    platform: Web
+  steps:
+  - id: Px83jX_LaEG3wt7Okqo5pA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: nHBKyka6qkCOqAudow9lbg
+      source: Store
+      addonId: -kT4Fi1xFk6PF8xkHU4vDg
+    parameterMaps:
+    - name: min
+      value: 100000
+      direction: Input
+    - name: max
+      value: 999999
+      direction: Input
+    - name: result
+      value: '{{Random_otp}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: LqYI_6TTPUSLzqbC0Zuq_A
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    elementId: 7UFKLZJsQUS2Ssn7g2Ax-Q
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{Random_otp}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: B3tmcQH5qk-n1djvYcoeqA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    elementId: iFEwSghvikiKcdFebp0M0Q
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 3E4V5VJOeEydcTkKGiirpg
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    elementId: riVycMMv6Emx_U0lHESMfA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Mensaje_OTP_Erroneo}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: Starts
+      invert: false
+      field: text
+      value: Código
+    contexts: []
+  - id: rzt7XqUOFEWnQVlW8F1g-Q
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: Random_otp
+    description: Dispondremos de un número random para ingresar como código otp erróneo
+    value: ''
+    type: Output
+  - name: Mensaje_OTP_Erroneo
+    description: Podremos validar que efectivamente se genere un mensaje que describa el ingreso de un código otp erróneo
+    value: ''
+    type: Output
+auxTests: []
+elements:
+- id: iFEwSghvikiKcdFebp0M0Q
+  name: Finalizar
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //button[. = 'Finalizar']
+    priority: 0
+  - name: XPATH
+    value: //p/button
+    priority: 1
+  - name: XPATH
+    value: /html/body/ngb-modal-window/div/div/app-pin-firmador/div[3]/div/p[2]/button
+    priority: 2
+- id: 7UFKLZJsQUS2Ssn7g2Ax-Q
+  name: PIN1
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#PIN1'
+    priority: 0
+  - name: XPATH
+    value: //form//input
+    priority: 1
+  - name: XPATH
+    value: /html/body/ngb-modal-window/div/div/app-pin-firmador/div[3]/div/div/form/div/input
+    priority: 2
+- id: riVycMMv6Emx_U0lHESMfA
+  name: Mensaje_Modal_OTP_Erroneo
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[. = ' Código Incorrecto ']
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[2]/div/div/div[1]
+    priority: 1
+projectParameters: []
+addons:
+- id: -kT4Fi1xFk6PF8xkHU4vDg
+  source: Store
+  version: 2.2
+  actions:
+  - id: nHBKyka6qkCOqAudow9lbg
+    name: Random number in a range
+    description: Generate random number between {{min}} and {{max}}
+    className: GenerateNumberInRange
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: B8E84E0F0EE92A1E8BB93EB3C515DB4F0106CAA6087A437A171B1B0191F14F88

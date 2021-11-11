@@ -1,0 +1,2005 @@
+id: 0rCYU20aqkeuVKZA26P9Ww
+projectId: pMTbqBsXcEO9XmbzOWMYTw
+projectName: Mi Firma_copy
+created: 2021-11-11T17:27:41.4377694Z
+protocol: 1
+tests:
+- id: s0BZMfyn-ES9n6YsxppqNQ
+  name: Flujo Solo yo - Reenvio de código otp
+  description: Se realiza la validación de alerta o modal informante por el uso máximo de intentos permitidos para el reenvió del código otp.
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 0.1
+  creationDate: 2021-11-11T17:25:21.0000000
+  modificationDate: 2021-11-11T17:25:21.0000000
+  settings:
+    automationAssistant: true
+    appId: zCXBZ0EWr0C6dHTqV8WU0Q
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Always
+  application:
+    id: zCXBZ0EWr0C6dHTqV8WU0Q
+    name: Mi Firma
+    url: https://app.mifirma.co/
+    platform: Web
+  steps:
+  - id: U80aMgmRkUWu7H8S4YXvPA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Test
+    targetTestId: v195zfsnJ0uQ0HdckzKF9A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      source: None
+    parameterMaps:
+    - name: ContrasenaUsuario
+      value: '[[Contrasena_FlujoSoloYo]]'
+      direction: Input
+    - name: CorreoElectronico
+      value: '[[UsuarioCorreoElectronico_FlujoSoloYo]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: rUGkiu6U0UaL2KoD82tVhw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 3000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: BaY14H9VTUmnS3X1gasyYA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Test
+    targetTestId: 0_ZiIEFyPUWzB8b8_0xUhg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      source: None
+    parameterMaps:
+    - name: CorreoElectronicoUsuario
+      value: '[[UsuarioCorreoElectronico_FlujoSoloYo]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 2JdMM-M6t0K9YdHrLly6Ug
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 1000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: r-KMrAf-PUSHb9vRTe0X_g
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    elementId: nje7vUV2LES74841tSw4VA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: F8sE6yFZpkGTvxMN1j4riQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Addon
+    elementId: lNynkNiG0Ei2eBlB-qsOOw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: HUG3yrSV3E-lym9Tz0-2hg
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: attributeValue
+      value: 'display: block'
+      direction: Input
+    - name: attributeName
+      value: style
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: pIUcl80GsU6ql9RkPRR2vw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Action
+    elementId: lNynkNiG0Ei2eBlB-qsOOw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: nnTgjKOWMkOrRTb90iGjrw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: eZDGTCUB_0CGCjtIljG-aA
+      source: Store
+      addonId: xQczalN7yUK6-wtFItRTLA
+    parameterMaps:
+    - name: xpath
+      value: //*[@id="drop"]/div/div/input
+      direction: Input
+    - name: path
+      value: '[[Ruta_documentoPDF]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: w0Fip9wxTkK3nphfVLhuKA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 9
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: WYiMU9MP1UO0BN6F_qln9w
+    enabled: true
+    invertResult: false
+    order: 10
+    repeat: 1
+    type: Action
+    elementId: Unln3Rdgu0mHJJfhtGgOvw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: jGCN781yDk21si0cAyum6w
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 11
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: cDSRpGeF_UW-gBz5l_6H9g
+    enabled: true
+    invertResult: false
+    order: 12
+    repeat: 1
+    type: Action
+    elementId: Unln3Rdgu0mHJJfhtGgOvw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: e9-Ohf9wtkyO4yY_2nQwPg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 13
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 8000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: lbYlV3b08kiwMPnMBodFJA
+    enabled: true
+    invertResult: false
+    order: 14
+    repeat: 1
+    type: Action
+    elementId: rH3vdPIiEUSR8HOOHlOHKA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Kb1IDDIPh026f3YszV7YJA
+    enabled: true
+    invertResult: false
+    order: 15
+    repeat: 2
+    type: Action
+    elementId: QdajO3I61UCgMKPaFMwQgQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Wq8FrwcbrUuTOVr3hXlNQg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 16
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: RjqwaKH1J0e9XLh7D7ClpQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 17
+    repeat: 1
+    type: Action
+    elementId: qe6__S61IEypwpVxizFZJg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: LNRw3fIWMEOICcV1t4Zzcg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 18
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 6000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: spzDizX74ESmxwnc9Q3N7Q
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 19
+    repeat: 1
+    type: Action
+    elementId: VZHJY5CZCk2XqY1iPmtYxw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: YAk86wWWs0WiEpxwYj11nA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 20
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: NpfgU8jAG06hFpu7NS4wUA
+      source: Store
+      addonId: 775wVW80X0u_jcJi9jfJxw
+    parameterMaps:
+    - name: URL
+      value: https://yopmail.com/es/
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: ePoeq1_KzUG7intixec1cA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 21
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: P1JQ5CoYoEicbdUShuQCRA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 22
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 7IlrmELvFE2o4kT7jCRmLw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 23
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 511ddb4e-210f-4f3f-9fb9-b766bb23ee6a
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: zlhV39LE_EKYFVOb7lsxaw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 24
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '[[UsuarioCorreoElectronico_FlujoSoloYo]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: lL8kK1V5ZU2THndWlfk7BA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 25
+    repeat: 1
+    type: Action
+    elementId: 7V8RLbzWS0OcGP__qoQLNQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: q2u5DsE6ZUOm54mrQonvPw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 26
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 4000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: ul33LatepkqPe_zok1otYw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 27
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: SFW6Rf9DW0G4jpBW38V4xw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: code
+      value: >-
+        var element_principal = document.getElementById("ifinbox");
+
+        var innerDoc = element_principal.contentDocument || element_principal.contentWindow.document;
+
+        var titles = innerDoc.getElementsByClassName("lmf");
+
+        console.log("1. La cantidad es " + titles.length);
+
+
+
+        for (index = 0; index < titles.length; index++) {
+
+            var title = titles[index].innerHTML;
+
+            if (title == "OlimpiaOTP@olimpiait.com") {
+
+                titles[index].click();
+
+                break;
+
+            }
+
+        }
+      direction: Input
+    - name: args
+      value: ''
+      direction: Input
+    - name: output
+      value: ''
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: jLFzS9qFV0a-Z2PWWN7qqQ
+    comments: This step was auto generated from several steps
+    enabled: true
+    invertResult: false
+    order: 28
+    repeat: 5
+    type: Test
+    targetTestId: sZC664ryWkix6d-fIdSdRQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      source: None
+    parameterMaps:
+    - name: Codigo_OTP_Validacion
+      value: '{{Codigo_OTP_Validacion}}'
+      direction: Output
+    - name: Mensaje_Reenvios_Codigos_OTP
+      value: '{{Mensaje_Reenvios_Codigos_OTP}}'
+      direction: Output
+    - name: Codigo_OTP
+      value: '{{Codigo_OTP}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: -3vlGlwy5k-JLnlmlp6S-A
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 29
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: b2Xgk7sX7ES_beHfNrexVg
+      source: Store
+      addonId: 5xTgapY7Q0mGOAy8eSnU5g
+    parameterMaps:
+    - name: result
+      value: ''
+      direction: Output
+    - name: fileName
+      value: ''
+      direction: Input
+    - name: path
+      value: '[[Ruta_SaveFileCSV]]'
+      direction: Input
+    - name: values
+      value: '{{Codigo_OTP}}{{Mensaje_Reenvios_Codigos_OTP}}'
+      direction: Input
+    - name: names
+      value: ''
+      direction: Input
+    - name: delimiter
+      value: ''
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: Codigo_OTP
+    description: Podremos validar que efectivamente se encuentre el codigo otp reenviado y para sus posteriores validaciones
+    value: ''
+    type: Output
+  - name: Codigo_OTP_Validacion
+    description: ''
+    value: ''
+    type: Output
+  - name: Mensaje_Reenvios_Codigos_OTP
+    description: Tendremos la posibilidad de validar el mensaje final que produce la aplicación por el máximo de intentos de reenvió del código OTP
+    value: ''
+    type: Output
+auxTests:
+- id: v195zfsnJ0uQ0HdckzKF9A
+  name: Inicio de sesión - Login
+  description: Llevamos el proceso de ingreso de usuario y contraseña, para acceder a Mi Firma
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 0.1
+  creationDate: 2021-11-11T17:25:21.0000000
+  modificationDate: 2021-11-11T17:25:21.0000000
+  settings:
+    automationAssistant: true
+    appId: zCXBZ0EWr0C6dHTqV8WU0Q
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  steps:
+  - id: p1bZH3stdEG5F6-pI8ankQ
+    comments: Navigates the specified URL (Auto-generated)
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: https://app.mifirma.co/
+      direction: Input
+    conditions:
+    - parameter: '[[Ambiente]]'
+      type: Contains
+      invert: false
+      value: produccion
+    validations: []
+    contexts: []
+  - id: Z3FC2W-HVUSo6SSKUaBX6Q
+    comments: Navigates the specified URL (Auto-generated)
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: https://mifirmapru.olimpiait.com:6570/
+      direction: Input
+    conditions:
+    - parameter: '[[Ambiente]]'
+      type: Contains
+      invert: false
+      value: pruebas
+    validations: []
+    contexts: []
+  - id: zvftx4RH9kSVN_mfqFyMCw
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    elementId: T6_7QGmXJ0uRIeAJtcP7NQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{CorreoElectronico}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: buUZ4hOTtUKos2FEhwmFxg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Addon
+    elementId: Unln3Rdgu0mHJJfhtGgOvw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: c7OPWafS8kaFJUBVwrhoRw
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 26QXs0lZJEqlfZ1usrbqGQ
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    elementId: B1QxPalYKke7XTUrGxg4Iw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{ContrasenaUsuario}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: cztIX9ix1UC9TAuDof_ZxQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Addon
+    elementId: Unln3Rdgu0mHJJfhtGgOvw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: c7OPWafS8kaFJUBVwrhoRw
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: CorreoElectronico
+    description: ''
+    value: ''
+    type: Input
+  - name: ContrasenaUsuario
+    description: ''
+    value: ''
+    type: Input
+- id: 0_ZiIEFyPUWzB8b8_0xUhg
+  name: Flujo_Vaciar_Correo_Buzon_Yopmail
+  description: This test was auto generated from steps of the 'Flujo Otros y yo - Orden' test
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 1.0
+  creationDate: 2021-11-11T17:25:21.0000000
+  modificationDate: 2021-11-11T17:25:21.0000000
+  settings:
+    automationAssistant: true
+    appId: zCXBZ0EWr0C6dHTqV8WU0Q
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  steps:
+  - id: DMCD-CcE1U-ZndfUwVh-jA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: NpfgU8jAG06hFpu7NS4wUA
+      source: Store
+      addonId: 775wVW80X0u_jcJi9jfJxw
+    parameterMaps:
+    - name: URL
+      value: https://yopmail.com/es/
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: o1xXrL6LTEG4fmUF87Bttw
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: dxPb3xzwj06Ta95r0KSMHA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: rbIZexqT2UKaI_dNwA4jcA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 511ddb4e-210f-4f3f-9fb9-b766bb23ee6a
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 0PhrFjtv8kOwS2uUOyf-nA
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{CorreoElectronicoUsuario}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 1Kyc3fevi0WTj6JRB7ctdg
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Action
+    elementId: 7V8RLbzWS0OcGP__qoQLNQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 3bqTe3ffK0C8yvQV0U-dTw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 1HkuibVlPkmTvfwHTIM4ig
+    enabled: true
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Action
+    elementId: lcnWM_X6dkOPpw5xZPJuEg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 838ppgYodU-1jpU14Tx_6Q
+    enabled: true
+    invertResult: false
+    order: 9
+    repeat: 1
+    type: Addon
+    elementId: oiPn8J6wF0SZ19SL7VLPKg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: U2veSbE9E0aIfg5GFB2HtQ
+      source: Store
+      addonId: inW2AJJ04ku45E9-RN2zqA
+    parameterMaps:
+    - name: timeout
+      value: ''
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Z5z3bTBSjUiUBmhTr9cXgQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 10
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: AlwaysPass
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 22Nw5UqP7EGqvQhuHT2kqg
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: pause
+      value: 1000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: krHZsE3iMkuQxdIpSTtLMw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 11
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 1000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 3zgiJ6yzgkKqqp1LNDDFTQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 12
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6cc71ddb-1aaf-433c-aa94-56d944aac433
+      source: System
+    parameterMaps:
+    - name: index
+      value: 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: rQOBAdc2nEuS5az-UdJSvg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 13
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 0
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: CorreoElectronicoUsuario
+    description: Necesario para vaciar el buzón de correos de cada uno de los usuarios que interactúan dentro del flujo de firma.
+    value: ''
+    type: Input
+- id: sZC664ryWkix6d-fIdSdRQ
+  name: 'Reenvió de código OTP '
+  description: This test was auto generated from steps of the 'Flujo Solo yo - Reenvio de código otp' test
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 1.0
+  creationDate: 2021-11-11T17:25:21.0000000
+  modificationDate: 2021-11-11T17:25:21.0000000
+  settings:
+    automationAssistant: true
+    appId: zCXBZ0EWr0C6dHTqV8WU0Q
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  steps:
+  - id: Fkk64KLapk-FvsCujcxkYg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    elementId: KMf5DThvpUyIVr1ypPu1tA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Codigo_OTP}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: NotEquals
+      invert: false
+      field: text
+      value: '{{Codigo_OTP_Validacion}}'
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: /html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: PQh_nveB2kST-U95HV6xCg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 0
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: UrKUyRrCaU2MJOhDX_DYfQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: tPrlTXEPXka-GYIH8ciueA
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    elementId: Pfm4nqGeXk2LfJxgd4qBjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: ROJU6_-0tEaGUzgjuxp5EQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Addon
+    elementId: s1bBLRRvwUKn6aouLB6U8A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: DvmyABJEKEOo2-2rlbbNvg
+      source: Store
+      addonId: inW2AJJ04ku45E9-RN2zqA
+    parameterMaps:
+    - name: text
+      value: '{{Mensaje_Reenvios_Codigos_OTP}}'
+      direction: Output
+    - name: timeout
+      value: 4000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: bAtGArbrVUCOJJ8pBF23Ww
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 25000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: mKOOB7pn5kmqBHAVHeiIiQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: VjZvgXcmfEmltglawQizhQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Action
+    elementId: CGrJMjo6l0SUWCsaiaptVg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: -4OViaNFY0C4rlNAZza7bA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 9
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 336FQ6lIy0aO3j05jjdYMA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 10
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6Cfge0QgaUyAK0P7f8jjeA
+      source: Store
+      addonId: aFWp2y4D5k6n8kKOGUMyDw
+    parameterMaps:
+    - name: value
+      value: '{{Codigo_OTP}}'
+      direction: Input
+    - name: outputParameter
+      value: '{{Codigo_OTP_Validacion}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 4Rv1PeQ0hk68uvWfmE3U3g
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 11
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: SFW6Rf9DW0G4jpBW38V4xw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: output
+      value: ''
+      direction: Output
+    - name: args
+      value: ''
+      direction: Input
+    - name: code
+      value: >-
+        var element_pricipal = document.getElementById("ifinbox");
+
+        var innerDoc = element_pricipal.contentDocument || element_pricipal.contentWindow.document;
+
+        var titles = innerDoc.getElementsByClassName("lmf");
+
+        console.log("1. La cantidad es " + titles.length);
+
+
+
+        for (index = 0; index < titles.length; index++) {
+
+            var title = titles[index].innerHTML;
+
+            if (title == "OlimpiaOTP@olimpiait.com") {
+
+                titles[index].click();
+
+                break;
+
+            }
+
+        }
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: -mrZOC_ZI0GUR85yjWT2Aw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 12
+    repeat: 1
+    type: Action
+    elementId: KMf5DThvpUyIVr1ypPu1tA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Codigo_OTP}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: NotEquals
+      invert: false
+      field: text
+      value: '{{Codigo_OTP_Validacion}}'
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: /html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  parameters:
+  - name: Codigo_OTP
+    description: Podremos validar que efectivamente se encuentre el codigo otp reenviado y para sus posteriores validaciones
+    value: ''
+    type: Output
+  - name: Codigo_OTP_Validacion
+    description: ''
+    value: ''
+    type: Output
+  - name: Mensaje_Reenvios_Codigos_OTP
+    description: Tendremos la posibilidad de validar el mensaje final que produce la aplicación por el máximo de intentos de reenvió del código OTP
+    value: ''
+    type: Output
+elements:
+- id: T6_7QGmXJ0uRIeAJtcP7NQ
+  name: email
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: XPATH
+    value: //input
+    priority: 3
+  - name: XPATH
+    value: //input[@placeholder = 'Correo electrónico']
+    priority: 2
+  - name: CSSSELECTOR
+    value: "[name='email']"
+    priority: 1
+  - name: CSSSELECTOR
+    value: '#correo'
+    priority: 0
+  - name: XPATH
+    value: /html/body/app-root/app-layout/app-login-firmador/section/div[2]/div[2]/div/form/div[1]/input
+    priority: 4
+- id: oiPn8J6wF0SZ19SL7VLPKg
+  name: Vaciar buzón de correo
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/div[1]/div/main/div[2]/div[1]/div/div[1]/div[1]/div/div[1]/button
+    priority: 2
+  - name: XPATH
+    value: //div[1]/div/div[1]/div[1]/div/div[1]/button
+    priority: 1
+  - name: XPATH
+    value: //button[. = 'Vaciar buzón de correo']
+    priority: 0
+- id: lcnWM_X6dkOPpw5xZPJuEg
+  name: Opciones_yopmail_correo
+  type:
+    id: jUwODgyNjAyNzk2NTk2MjQ
+    name: i
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[2]/div[1]/div/div[1]/div[1]/button/i
+    priority: 1
+  - name: XPATH
+    value: //i[. = '']
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[1]/div/main/div[2]/div[1]/div/div[1]/div[1]/button/i
+    priority: 2
+- id: KMf5DThvpUyIVr1ypPu1tA
+  name: codigo_otp_en_yopmail
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTM
+    name: Paragraph
+    source: System
+  locators:
+  - name: XPATH
+    value: //p[2]
+    priority: 0
+  - name: XPATH
+    value: /html/body/main/div/div/div/table[2]/tbody/tr[2]/td/p[2]
+    priority: 1
+- id: 7V8RLbzWS0OcGP__qoQLNQ
+  name: Ingresar_email_yopmail
+  type:
+    id: jUwODgyNjAyNzk2NTk2MjQ
+    name: i
+    source: System
+  locators:
+  - name: XPATH
+    value: //i[. = '']
+    priority: 0
+  - name: XPATH
+    value: //button/i
+    priority: 1
+  - name: XPATH
+    value: /html/body/div/div[2]/main/div[3]/div/div[1]/div[2]/div/div/form/div/div/div[4]/button/i
+    priority: 2
+- id: r1hGa9haikCRW925YWuYjA
+  name: login
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: "[name='login']"
+    priority: 1
+  - name: XPATH
+    value: //input[@placeholder = 'Ingrese una dirección aquí']
+    priority: 2
+  - name: XPATH
+    value: //div[2]/div/input
+    priority: 3
+  - name: XPATH
+    value: /html/body/div/div[2]/main/div[3]/div/div[1]/div[2]/div/div/form/div/div/div[2]/div/input
+    priority: 4
+  - name: CSSSELECTOR
+    value: '#login'
+    priority: 0
+- id: qe6__S61IEypwpVxizFZJg
+  name: Firmar
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-firmador/div/div[2]/div[1]/div[2]/button
+    priority: 2
+  - name: XPATH
+    value: //button[. = ' Firmar ']
+    priority: 0
+  - name: XPATH
+    value: //div/div[1]/div[2]/button
+    priority: 1
+- id: QdajO3I61UCgMKPaFMwQgQ
+  name: Iniciales
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-firmador/div/div[1]/div/div[3]/div[2]/button[2]
+    priority: 2
+  - name: XPATH
+    value: //div[2]/button[2]
+    priority: 1
+  - name: XPATH
+    value: //button[. = 'Iniciales']
+    priority: 0
+- id: rH3vdPIiEUSR8HOOHlOHKA
+  name: IMG_Firma
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTI
+    name: Image
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-firmador/div/div[2]/app-signatures-list/div/div[1]/div/img
+    priority: 0
+- id: lNynkNiG0Ei2eBlB-qsOOw
+  name: input_file
+  description: ''
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDM
+    name: Generic Web Element
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-documentos/div/div[2]/div[2]/ngx-file-drop/div/div/input
+    priority: 2
+  - name: XPATH
+    value: //*[@id="drop"]/div/div/input
+    priority: 1
+  - name: CSSSELECTOR
+    value: '   #drop > div > div > input'
+    priority: 0
+- id: nje7vUV2LES74841tSw4VA
+  name: Firmar un Documento
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#btnFirmarDocumento'
+    priority: 0
+  - name: XPATH
+    value: //a[. = ' Firmar un Documento ']
+    priority: 1
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-menu/div/div/a[1]
+    priority: 3
+  - name: XPATH
+    value: //div/div/a[1]
+    priority: 2
+- id: B1QxPalYKke7XTUrGxg4Iw
+  name: contrasena1
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#contrasena'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='contrasena']"
+    priority: 1
+  - name: XPATH
+    value: //input[@placeholder = 'Contraseña']
+    priority: 2
+  - name: XPATH
+    value: //div[3]/input
+    priority: 3
+  - name: XPATH
+    value: /html/body/app-root/app-layout/app-login-password/section/div[2]/div[2]/div/form/div[3]/input
+    priority: 4
+- id: Unln3Rdgu0mHJJfhtGgOvw
+  name: btnContinuar
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //button[. = ' Continuar ']
+    priority: 1
+  - name: CSSSELECTOR
+    value: "[name='btnContinuar']"
+    priority: 0
+  - name: XPATH
+    value: /html/body/app-root/app-layout/app-login-firmador/section/div[2]/div[2]/div/form/div[3]/button
+    priority: 2
+- id: s1bBLRRvwUKn6aouLB6U8A
+  name: Mensaje_Modal_Reenvio_OTP
+  description: ''
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/div[4]/div/div/div[1]
+    priority: 1
+  - name: XPATH
+    value: //div[. = ' Supero el máximo de reenvios ']
+    priority: 0
+- id: Pfm4nqGeXk2LfJxgd4qBjA
+  name: Reenviar código
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/ngb-modal-window/div/div/app-pin-firmador/div[3]/div/p[1]/span
+    priority: 2
+  - name: XPATH
+    value: //p/span
+    priority: 1
+  - name: XPATH
+    value: //span[. = 'Reenviar código']
+    priority: 0
+- id: VZHJY5CZCk2XqY1iPmtYxw
+  name: Caja_Codigo_Otp
+  description: ''
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDM
+    name: Generic Web Element
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/ngb-modal-window/div/div/app-pin-firmador
+    priority: 1
+  - name: CSSSELECTOR
+    value: body > ngb-modal-window > div > div > app-pin-firmador
+    priority: 0
+- id: CGrJMjo6l0SUWCsaiaptVg
+  name: Recargar_Bandeja_Correo_Yopmail
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/div[1]/div/main/div[2]/div[1]/div/div[1]/div[6]/button
+    priority: 3
+  - name: XPATH
+    value: //div[6]/button
+    priority: 2
+  - name: XPATH
+    value: //button[. = '']
+    priority: 1
+  - name: CSSSELECTOR
+    value: '#refresh'
+    priority: 0
+projectParameters:
+- id: aseSbT-p90-i9A20AkZIAw
+  name: UsuarioCorreoElectronico_FlujoSoloYo
+  description: Correo electrónico de un usuario ya registrado en Mi Firma - Flujo Solo Yo.
+  value: brayan.rodriguez@yopmail.com
+- id: 63btof8e3EiJlz8TthmQCw
+  name: Contrasena_FlujoSoloYo
+  description: Contraseña que estará ligada al usuario ya registrado en Mi Firma - Flujo Solo Yo.
+  value: Brayan.2
+- id: 5zaH78MmrE25mWNyjTmzVw
+  name: Ruta_documentoPDF
+  description: Se necesitara la ruta de maquina local, donde esta ubicado el documento PDF que se dispondrá para realizar el flujo de firma.
+  value: C:\Users\brodriguez\Downloads\Prueba-Mifirma21.pdf
+- id: Ex2VjMsI20WVG-H4kQCWZQ
+  name: Ruta_SaveFileCSV
+  description: Ruta desde nuestra maquina local para poder guardar y ubicar nuestros archivos finales CSV, como evidencia adicional de la ejecución de las pruebas.
+  value: C:\Users\brodriguez\Desktop\Resultados MiFirma
+- id: Cuxs7XQrPU6_VOiIDHNUAQ
+  name: Ambiente
+  description: Necesario para conocer a cual ambiente queremos ejecutar los casos de pruebas, ya sea producción o pruebas.
+  value: produccion
+addons:
+- id: aFWp2y4D5k6n8kKOGUMyDw
+  source: Store
+  version: 1.0
+  actions:
+  - id: 6Cfge0QgaUyAK0P7f8jjeA
+    name: Set value to a parameter
+    description: Set '{{value}}' into {{outputParameter}}
+    className: SetParameterValue
+  minSdkLevel: 2
+  minSdkVersion: 0.56.0
+  sdkGeneration: 1
+  language: Java
+  hash: 5B71B31160005CC53F6484B63977712C1BEC277EAD5E50A543CB52B9976C7BAF
+- id: xQczalN7yUK6-wtFItRTLA
+  source: Store
+  version: 0.2
+  actions:
+  - id: eZDGTCUB_0CGCjtIljG-aA
+    name: Upload File using XPath
+    description: Upload a file to a specific element identifies by XPath
+    className: actions.UploadFileByXpathAction
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: 39D3E443B9616B96F04ACC3BA72CCDBE1F694FAF804F11C21FFDB959ECCFA0D3
+- id: Xey4bVsJQEODIUN7ssaJMg
+  source: Store
+  version: 1.1.9
+  actions:
+  - id: HUG3yrSV3E-lym9Tz0-2hg
+    name: Set attribute value
+    description: Set {{attributeName}} attribute value on {{element}}
+    className: io.testproject.addons.web.element.SetElementAttribute
+  - id: SFW6Rf9DW0G4jpBW38V4xw
+    name: Execute JavaScript
+    description: Execute JavaScript {{code}} with arguments {{args}}
+    className: io.testproject.addons.web.actions.ExecuteJavascript
+  - id: 22Nw5UqP7EGqvQhuHT2kqg
+    name: Accept alert
+    description: Accept alert
+    className: io.testproject.addons.web.alert.AcceptAlert
+  minSdkLevel: 2
+  minSdkVersion: 0.63.1
+  sdkGeneration: 1
+  language: Java
+  hash: 2D35A7CE404CDBD8C628208C7BF6C79678E47DC6F249518E97AC68E19F0A0B6D
+- id: 9G7qW0nEqU60ObO6IXJshg
+  source: Store
+  version: 1.9
+  actions:
+  - id: c7OPWafS8kaFJUBVwrhoRw
+    name: Click (using JavaScript)
+    description: Click {{element}}
+    className: io.testproject.addon.jsactions.ClickAction
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: 391BA51B31B3A1CADC112A2DD7D674CCC8AA80895D1FB9B1A90928D01D0153F3
+- id: 5xTgapY7Q0mGOAy8eSnU5g
+  source: Store
+  version: 4.1
+  actions:
+  - id: b2Xgk7sX7ES_beHfNrexVg
+    name: Create a new CSV file
+    description: Create CSV file
+    className: Actions.CreateCSV
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: AB59C6043A65B86D3D7F1E0160464A18621054AF7C2A7FDE1690BC1F7A62F1AA
+- id: 775wVW80X0u_jcJi9jfJxw
+  source: Store
+  version: 0.6
+  actions:
+  - id: NpfgU8jAG06hFpu7NS4wUA
+    name: Open URL in New Tab
+    description: Open a URL in a new tab
+    className: NewTabAtURL
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: F31625A0D5FB4DA99C55BAE170047D94F81D08AC0EA8623AF682C4E335FAA18B
+- id: inW2AJJ04ku45E9-RN2zqA
+  source: Store
+  version: 2.10
+  actions:
+  - id: U2veSbE9E0aIfg5GFB2HtQ
+    name: Click if visible
+    description: Click {{element}} if it's visible
+    className: io.testproject.addon.ClickActions.ClickIfVisibleWeb
+  - id: DvmyABJEKEOo2-2rlbbNvg
+    name: Get text (if visible)
+    description: Get text from {{element}} if it's visible
+    className: io.testproject.addon.GetTextActions.GetTextIfVisibleWeb
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: CB217F4B750B6C3441DDB87E262A5C710BB3891BAE1F68FFF01CF07AEB036675

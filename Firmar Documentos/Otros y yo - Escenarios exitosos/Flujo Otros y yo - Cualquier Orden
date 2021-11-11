@@ -1,0 +1,6538 @@
+id: OOa5P6WqAEKjDGaXUQmUXA
+projectId: pMTbqBsXcEO9XmbzOWMYTw
+projectName: Mi Firma_copy
+created: 2021-11-11T17:27:35.4525580Z
+protocol: 1
+tests:
+- id: 2xW0XhcV2Emy5T_1875_XA
+  name: Flujo Otros y yo - Cualquier Orden
+  description: Se realiza la generación de documento con anotaciones, solicitud de firma, validación de OTP, firmas del documento con flujo en cualquier orden y validación de caso exitoso.
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 0.1
+  creationDate: 2021-11-11T17:25:21.0000000
+  modificationDate: 2021-11-11T17:25:21.0000000
+  settings:
+    automationAssistant: true
+    appId: zCXBZ0EWr0C6dHTqV8WU0Q
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Always
+  application:
+    id: zCXBZ0EWr0C6dHTqV8WU0Q
+    name: Mi Firma
+    url: https://app.mifirma.co/
+    platform: Web
+  steps:
+  - id: m9I2IbFCmEOSHn89HCODLA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Test
+    targetTestId: v195zfsnJ0uQ0HdckzKF9A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      source: None
+    parameterMaps:
+    - name: CorreoElectronico
+      value: '[[UsuarioCorreoElectronico_FlujoOtrosYo]]'
+      direction: Input
+    - name: ContrasenaUsuario
+      value: '[[Contrasena_FlujoOtrosYo]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Qzr-m10eD0-CRsN_4XcGMw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 3000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: cfVR0D_vskWM6bnk0PTYBQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Test
+    targetTestId: 0_ZiIEFyPUWzB8b8_0xUhg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      source: None
+    parameterMaps:
+    - name: CorreoElectronicoUsuario
+      value: '[[UsuarioCorreoElectronico_FlujoOtrosYo]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: lAlJNs2KAEWbm3RSYyDWrQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 1000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Y2WGz441xkqIBbQx4O45Rg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Test
+    targetTestId: 0_ZiIEFyPUWzB8b8_0xUhg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      source: None
+    parameterMaps:
+    - name: CorreoElectronicoUsuario
+      value: '{{Email_firmante_1}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Jommn4xarUajIWkJcDGxdg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 1000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: TC1y3Qhfek2CcTZh-_iEjw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Test
+    targetTestId: 0_ZiIEFyPUWzB8b8_0xUhg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      source: None
+    parameterMaps:
+    - name: CorreoElectronicoUsuario
+      value: '{{Email_firmante_2}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: vw7BO3-oH06by3nXORrpEA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 1000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 76acmAbzdUi1uaZH2jhmqg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 9
+    repeat: 1
+    type: Test
+    targetTestId: 0_ZiIEFyPUWzB8b8_0xUhg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      source: None
+    parameterMaps:
+    - name: CorreoElectronicoUsuario
+      value: '{{Email_usuario_envio_copia}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: nlS2ymAMU0aCT5ivW82hgA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 10
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 1000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: K5kWbE0h10WITdGgwFTm9w
+    enabled: true
+    invertResult: false
+    order: 11
+    repeat: 1
+    type: Action
+    elementId: nje7vUV2LES74841tSw4VA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: ySyI2v0teEKBNZVd2BsOAg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 12
+    repeat: 1
+    type: Addon
+    elementId: lNynkNiG0Ei2eBlB-qsOOw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: HUG3yrSV3E-lym9Tz0-2hg
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: attributeValue
+      value: 'display: block'
+      direction: Input
+    - name: attributeName
+      value: style
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 6dWsmC1180K8Dn8LoBHM9w
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 13
+    repeat: 1
+    type: Action
+    elementId: lNynkNiG0Ei2eBlB-qsOOw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: uXQP0mFSTU6hu9Hh6C1yew
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 14
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: eZDGTCUB_0CGCjtIljG-aA
+      source: Store
+      addonId: xQczalN7yUK6-wtFItRTLA
+    parameterMaps:
+    - name: xpath
+      value: //*[@id="drop"]/div/div/input
+      direction: Input
+    - name: path
+      value: '[[Ruta_documentoPDF]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: KIJBGF-Le0Oqgdcv4mFA_A
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 15
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: NpGVsbiJ7kWi7OUXgWlNBA
+    enabled: true
+    invertResult: false
+    order: 16
+    repeat: 1
+    type: Action
+    elementId: Unln3Rdgu0mHJJfhtGgOvw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: vC4g-Hyim0q-g9uNpeXHYA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 17
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: bIqb40vT-Ui-NUKwgRq9Ow
+    enabled: true
+    invertResult: false
+    order: 18
+    repeat: 1
+    type: Action
+    elementId: NjJoYvdaCUaNKTEf9Fhx7Q
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: u9u1yoidJU6jSahLLyG1hQ
+    enabled: true
+    invertResult: false
+    order: 19
+    repeat: 1
+    type: Action
+    elementId: mIEctC_q7Eeoj2viJ2KWvw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: oYMarIc-xkaGKK1U7MgnVA
+    enabled: true
+    invertResult: false
+    order: 20
+    repeat: 1
+    type: Action
+    elementId: z1aZFWwjy0a_7Jo_nyUO7Q
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: Pepito
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: GEyT2D-KuUiZttu1eIedVA
+    enabled: true
+    invertResult: false
+    order: 21
+    repeat: 1
+    type: Action
+    elementId: N7Abt1yknk6ACi7gkQaZmQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: Pepita
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: kjhcgwaMbkS5BQWXWcfl4w
+    enabled: true
+    invertResult: false
+    order: 22
+    repeat: 1
+    type: Action
+    elementId: xPu8lq4JH0mW7rXtKRE1jw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{Email_firmante_1}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: bFEbqPl690m7HGBM3G_0XQ
+    enabled: true
+    invertResult: false
+    order: 23
+    repeat: 1
+    type: Action
+    elementId: _OiHIHVfhE6GoSE05zMwtA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{Email_firmante_2}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: SUpdtBA5KEyUEOagc-bE6A
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 24
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: R4bp2faQAkSOXk6qpsUSaQ
+    enabled: true
+    invertResult: false
+    order: 25
+    repeat: 1
+    type: Action
+    elementId: Unln3Rdgu0mHJJfhtGgOvw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: wKNNNpbnIkCUWRej_Bk0iw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 26
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 8000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: wXwGq1GdqUyNdgY8aU1VXA
+    enabled: true
+    invertResult: false
+    order: 27
+    repeat: 1
+    type: Action
+    elementId: rH3vdPIiEUSR8HOOHlOHKA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: bsBCvPoyc0WzEuzekDJtSw
+    enabled: true
+    invertResult: false
+    order: 28
+    repeat: 2
+    type: Action
+    elementId: QdajO3I61UCgMKPaFMwQgQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: WLKtfHsBok2Rsy-S0eqFLA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 29
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: joxCk-ChX0erPsc3iGM54g
+    enabled: true
+    invertResult: false
+    order: 30
+    repeat: 1
+    type: Action
+    elementId: fvTs9Nq410izjmBvxSH_-w
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: uS7actfAokyXu1DJcdSyuA
+    enabled: true
+    invertResult: false
+    order: 31
+    repeat: 1
+    type: Action
+    elementId: JK6ONMswKkmGN3cnr0SmgA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: gyjUiXTqyUmCEzOX1g5wNg
+    enabled: true
+    invertResult: false
+    order: 32
+    repeat: 1
+    type: Action
+    elementId: ATtoLia0TUCASsFuTG7vVQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: G7k325N59EKvSV7pUoJ-nw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 33
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 1000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: RV_IEDW5IUuEBNLD9XIpKg
+    enabled: true
+    invertResult: false
+    order: 34
+    repeat: 1
+    type: Action
+    elementId: fvTs9Nq410izjmBvxSH_-w
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: PFWAaPWzcUeBVvFmZDUEHQ
+    enabled: true
+    invertResult: false
+    order: 35
+    repeat: 1
+    type: Action
+    elementId: EGA-6BGXZEerO4PH7TtvVg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: q5wCy6ay5k2zu6rKUOapTg
+    enabled: true
+    invertResult: false
+    order: 36
+    repeat: 1
+    type: Action
+    elementId: ATtoLia0TUCASsFuTG7vVQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: RSL-8a7LYE6Ib145SuFPiA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 37
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: GYrv5T3h2U-b7eEZhP2v8g
+    enabled: true
+    invertResult: false
+    order: 38
+    repeat: 1
+    type: Action
+    elementId: qe6__S61IEypwpVxizFZJg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: h9728ieaxkeJ3PQ47pPykQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 39
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 1500
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: qPybTtK8zUCz6tYZdEInnQ
+    enabled: true
+    invertResult: false
+    order: 40
+    repeat: 1
+    type: Action
+    elementId: 5xcjOtmyP0uohjt4kquX5g
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: wzwQ_rVWPUKwK4vdYvYp3w
+    enabled: true
+    invertResult: false
+    order: 41
+    repeat: 1
+    type: Action
+    elementId: d0nRXVtzO0GHlJf68My1IA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: H4B4S-lktE6sxxFqJr0scA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 42
+    repeat: 1
+    type: Action
+    elementId: loko7PCcf0yq1axxwaLc6w
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 511ddb4e-210f-4f3f-9fb9-b766bb23ee6a
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: _Wy4jE6oYU2nhtNXz-wStA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 43
+    repeat: 1
+    type: Action
+    elementId: PHvSjuJH3E6m0B3BpComvQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 511ddb4e-210f-4f3f-9fb9-b766bb23ee6a
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 5pHdioW6uUiEn4UbpgqJIQ
+    enabled: true
+    invertResult: false
+    order: 44
+    repeat: 1
+    type: Action
+    elementId: loko7PCcf0yq1axxwaLc6w
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: 99
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: AgNKHg-qlUytlQckx42vyg
+    enabled: true
+    invertResult: false
+    order: 45
+    repeat: 1
+    type: Action
+    elementId: PHvSjuJH3E6m0B3BpComvQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: 98
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Sg4rjn4X4U-aUk5AU93Pjg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 46
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 1500
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: tOwqwCIS6EOGN3M5s8v9Xw
+    enabled: true
+    invertResult: false
+    order: 47
+    repeat: 1
+    type: Action
+    elementId: 9sLtsYs1gEqrk4Kq4oYW0A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{Email_usuario_envio_copia}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: DFOXDkguWEue5I8Oa_Dcbg
+    enabled: true
+    invertResult: false
+    order: 48
+    repeat: 1
+    type: Action
+    elementId: KsY1rRpRBk6KitZ7mcoaMw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: Copia de documento original para el proceso de pruebas
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: CAw0uaV-BkC00i1WtP-nSw
+    enabled: true
+    invertResult: false
+    order: 49
+    repeat: 1
+    type: Action
+    elementId: POYsnNubmE6bj_ZNLhvNPg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: Este es un correo asignado para la prueba de envió de copia de copia a los correos ya inscritos anteriormente.
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: lPp-3rtSbEe_37CRi104wQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 50
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 1000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: zLlgAQzrk0CW4a_ae1vdTw
+    enabled: true
+    invertResult: false
+    order: 51
+    repeat: 1
+    type: Action
+    elementId: iA1JsAtznUaq-blRYqK2QA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: t4h-UXcSRkCp9754K2e3TQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 52
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 8000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 4Rx8fGhS40yPPp0Bc8bjAw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 53
+    repeat: 1
+    type: Action
+    elementId: VZHJY5CZCk2XqY1iPmtYxw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: nUcsB_TD30ytfR30U-XsEQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 54
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: NpfgU8jAG06hFpu7NS4wUA
+      source: Store
+      addonId: 775wVW80X0u_jcJi9jfJxw
+    parameterMaps:
+    - name: URL
+      value: https://yopmail.com/es/
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 0vYXOttYCE2rBT_yREVDLA
+    enabled: true
+    invertResult: false
+    order: 55
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 1k4uMzcudEqSm6YnA8l5_g
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 56
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: -qVNNZpD-EGzy_emJlnXuA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 57
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 511ddb4e-210f-4f3f-9fb9-b766bb23ee6a
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: L8V6GlJrMkaYr9y6lGs4_A
+    enabled: true
+    invertResult: false
+    order: 58
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '[[UsuarioCorreoElectronico_FlujoOtrosYo]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: sjppgmS8s06gJVw2Ij2Tsg
+    enabled: true
+    invertResult: false
+    order: 59
+    repeat: 1
+    type: Action
+    elementId: 7V8RLbzWS0OcGP__qoQLNQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: SrvEkDXZekW_TTzUGBzi0Q
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 60
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 4000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 9NHKpXka_Emd1gpgprQkVQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 61
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: SFW6Rf9DW0G4jpBW38V4xw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: output
+      value: ''
+      direction: Output
+    - name: args
+      value: ''
+      direction: Input
+    - name: code
+      value: >-
+        var element_pricipal = document.getElementById("ifinbox");
+
+        var innerDoc = element_pricipal.contentDocument || element_pricipal.contentWindow.document;
+
+        var titles = innerDoc.getElementsByClassName("lmf");
+
+        console.log("1. La cantidad es " + titles.length);
+
+
+
+        for (index = 0; index < titles.length; index++) {
+
+            var title = titles[index].innerHTML;
+
+            if (title == "OlimpiaOTP@olimpiait.com") {
+
+                titles[index].click();
+
+                break;
+
+            }
+
+        }
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 8xkNzu8d60uV0t3iT9wNxQ
+    enabled: true
+    invertResult: false
+    order: 62
+    repeat: 1
+    type: Action
+    elementId: KMf5DThvpUyIVr1ypPu1tA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Codigo_OTP}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: /html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: Bg40jq7Ee06lsX1fcHPgtA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 63
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: PMrKUnqhzEqmbuUWzlJ3KQ
+    enabled: true
+    invertResult: false
+    order: 64
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 0
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: RlaC4lwNZ0uWVYryrWpYvw
+    enabled: true
+    invertResult: false
+    order: 65
+    repeat: 1
+    type: Action
+    elementId: 7UFKLZJsQUS2Ssn7g2Ax-Q
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{Codigo_OTP}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: CgJpHHzNZ0uOShYh2xtObw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 66
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: ku3Y7ramlEWgfVARvBOPTA
+    enabled: true
+    invertResult: false
+    order: 67
+    repeat: 1
+    type: Action
+    elementId: iFEwSghvikiKcdFebp0M0Q
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: rWX1S3pg10WNjHyp4EE0DA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 68
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 15000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 79gnrAwLaEK1tbsZPvT-Hg
+    enabled: true
+    invertResult: false
+    order: 69
+    repeat: 1
+    type: Action
+    elementId: V13w_NYz_0m_jMeBBAansA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: LaYZ65skHUSG8klxl-Rs_g
+    enabled: true
+    invertResult: false
+    order: 70
+    repeat: 1
+    type: Action
+    elementId: t2UzJWHPuUi9CVPYtLyQUQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: FQCAu9485EuNPklLuYBgVg
+    enabled: true
+    invertResult: false
+    order: 71
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: E35XOFO_wkOW_LAu3U5ucg
+    enabled: true
+    invertResult: false
+    order: 72
+    repeat: 1
+    type: Action
+    elementId: Q7X1M0psX0yU5gRh0nMzbg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: hdcl93EEGkO6gH2wEGSoZw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 73
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 511ddb4e-210f-4f3f-9fb9-b766bb23ee6a
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: vmD8d_lAz0qegEXFTAoAJg
+    enabled: true
+    invertResult: false
+    order: 74
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{Email_firmante_2}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: AHjBuBUhFUO0OrsjuapTNg
+    enabled: true
+    invertResult: false
+    order: 75
+    repeat: 1
+    type: Action
+    elementId: 7V8RLbzWS0OcGP__qoQLNQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: ihfTOW-B60KzR2rQQJBMOA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 76
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 4000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: fqU2uz7wgU24txFKAU7bUQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 77
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: SFW6Rf9DW0G4jpBW38V4xw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: output
+      value: ''
+      direction: Output
+    - name: args
+      value: ''
+      direction: Input
+    - name: code
+      value: >-
+        var element_pricipal = document.getElementById("ifinbox");
+
+        var innerDoc = element_pricipal.contentDocument || element_pricipal.contentWindow.document;
+
+        var titles = innerDoc.getElementsByClassName("lmf");
+
+        console.log("1. La cantidad es " + titles.length);
+
+
+
+        for (index = 0; index < titles.length; index++) {
+
+            var title = titles[index].innerHTML;
+
+            if (title == "mifirma@olimpiait.com") {
+
+                titles[index].click();
+
+                break;
+
+            }
+
+        }
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: owpBcKAJW0G8Pv-y7y6A9w
+    enabled: true
+    invertResult: false
+    order: 78
+    repeat: 1
+    type: Action
+    elementId: eC2xpU1OAky3STDaWU8l0A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Solicitud_De_Firma_Firmante_2}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: Starts
+      invert: false
+      field: text
+      value: Solicitud De Firma
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: lPFY8pPnIUW3Y8pMjSerBA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 79
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Q6ZQl3JZaUynykbG3yUw9g
+    enabled: true
+    invertResult: false
+    order: 80
+    repeat: 1
+    type: Action
+    elementId: Q7X1M0psX0yU5gRh0nMzbg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: HfFr24cv_Ei6D7do5J4Lrg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 81
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 511ddb4e-210f-4f3f-9fb9-b766bb23ee6a
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: lbwSPzo7ek2lefMvAeHV6g
+    enabled: true
+    invertResult: false
+    order: 82
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{Email_firmante_1}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 52AqzeHKh0-aG3RWQ8-IrQ
+    enabled: true
+    invertResult: false
+    order: 83
+    repeat: 1
+    type: Action
+    elementId: 7V8RLbzWS0OcGP__qoQLNQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 2lRTGpN-8kWojABjohTF0g
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 84
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 4000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: w341LeRXoU-ehhOItT28eA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 85
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: SFW6Rf9DW0G4jpBW38V4xw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: output
+      value: ''
+      direction: Output
+    - name: args
+      value: ''
+      direction: Input
+    - name: code
+      value: >-
+        var element_pricipal = document.getElementById("ifinbox");
+
+        var innerDoc = element_pricipal.contentDocument || element_pricipal.contentWindow.document;
+
+        var titles = innerDoc.getElementsByClassName("lmf");
+
+        console.log("1. La cantidad es " + titles.length);
+
+
+
+        for (index = 0; index < titles.length; index++) {
+
+            var title = titles[index].innerHTML;
+
+            if (title == "mifirma@olimpiait.com") {
+
+                titles[index].click();
+
+                break;
+
+            }
+
+        }
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: mthHb6uh106POOCg2v-F-Q
+    enabled: true
+    invertResult: false
+    order: 86
+    repeat: 1
+    type: Action
+    elementId: eC2xpU1OAky3STDaWU8l0A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Solicitud_De_Firma_Firmante_1}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: Starts
+      invert: false
+      field: text
+      value: Solicitud De Firma
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: SKmfBlMHLUehgpD2bvcqbA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 87
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: vZt2x3jtjkew4UXeTHJzCQ
+    comments: This step was auto generated from several steps
+    enabled: true
+    invertResult: false
+    order: 88
+    repeat: 1
+    type: Test
+    targetTestId: 3u_hW6rR6kG5GFnZ--y_HQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      source: None
+    parameterMaps:
+    - name: Password_firmante
+      value: '{{Password_firmante_1}}'
+      direction: Input
+    - name: Codigo_OTP
+      value: '{{Codigo_OTP}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: N-u9XOxCgUGfUhPLiHvteg
+    enabled: true
+    invertResult: false
+    order: 89
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: FSvqw8DDLkaBaE9whxV6Bg
+    enabled: true
+    invertResult: false
+    order: 90
+    repeat: 1
+    type: Action
+    elementId: Q7X1M0psX0yU5gRh0nMzbg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 4rvt4qlboEOBvhAMuxah4A
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 91
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 511ddb4e-210f-4f3f-9fb9-b766bb23ee6a
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: gJ7lq3YVn0mRd4GHxsCTdA
+    enabled: true
+    invertResult: false
+    order: 92
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{Email_firmante_2}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 5lw09AokZEekzQ3mWFekIQ
+    enabled: true
+    invertResult: false
+    order: 93
+    repeat: 1
+    type: Action
+    elementId: 7V8RLbzWS0OcGP__qoQLNQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: yX33DsZCCUasa5Laa8YWog
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 94
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 4000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Z4zzHhnKoEuYfUEXdKubBA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 95
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: SFW6Rf9DW0G4jpBW38V4xw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: output
+      value: ''
+      direction: Output
+    - name: args
+      value: ''
+      direction: Input
+    - name: code
+      value: >-
+        var element_pricipal = document.getElementById("ifinbox");
+
+        var innerDoc = element_pricipal.contentDocument || element_pricipal.contentWindow.document;
+
+        var titles = innerDoc.getElementsByClassName("lmf");
+
+        console.log("1. La cantidad es " + titles.length);
+
+
+
+        for (index = 0; index < titles.length; index++) {
+
+            var title = titles[index].innerHTML;
+
+            if (title == "mifirma@olimpiait.com") {
+
+                titles[index].click();
+
+                break;
+
+            }
+
+        }
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: FidT2OJ42kqcYRd1R-UCtQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 96
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: KYhnaE6QdkirVA12oLgdag
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 97
+    repeat: 1
+    type: Test
+    targetTestId: 3u_hW6rR6kG5GFnZ--y_HQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      source: None
+    parameterMaps:
+    - name: Codigo_OTP
+      value: '{{Codigo_OTP}}'
+      direction: Output
+    - name: Password_firmante
+      value: '{{Password_firmante_2}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 4Pw4DfTkpki9U0b3ZxJqcg
+    enabled: true
+    invertResult: false
+    order: 98
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 0
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: hoa8xxx0zkCTKk-3wBWYlg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 99
+    repeat: 1
+    type: Test
+    targetTestId: v195zfsnJ0uQ0HdckzKF9A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      source: None
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 8jSfydAlnEGgb4-pczBRqg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 100
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: eCrp2ulk30WYN_zF010LiA
+    enabled: true
+    invertResult: false
+    order: 101
+    repeat: 1
+    type: Action
+    elementId: nrtHbd8BxE6ncXcqBhFMbw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: yiZ6yyCKEkuXzxZaw-4lFg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 102
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 6000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: RqCOxUTDMkKcAtKuJ08pTA
+    enabled: true
+    invertResult: false
+    order: 103
+    repeat: 1
+    type: Action
+    elementId: ySA2puWazEaLVEGckm-ZTw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: t8wFijdhKE6TbpDLZ4mVgg
+    enabled: true
+    invertResult: false
+    order: 104
+    repeat: 1
+    type: Action
+    elementId: IRNljzWkPEq-yN1O8IXdiQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: I2e6LtA57EmK0oWx7X2XpQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 105
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 8000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: dAfYa3yZ00e3dvUFhGee2g
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 106
+    repeat: 1
+    type: Action
+    elementId: EWl-3TvVRU6CFtZ4i_JvbA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: V5Y6gwHlO0C6k9ZzISyoGg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 107
+    repeat: 1
+    type: Action
+    elementId: EWl-3TvVRU6CFtZ4i_JvbA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Estado_documento}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: Equals
+      invert: false
+      field: text
+      value: Firmas completadas
+    contexts: []
+  - id: Ysd6G5WgR02131UVeMO5TA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 108
+    repeat: 1
+    type: Action
+    elementId: _P7tpIM3J0y3uO6t6hnNJQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Total_firmas}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: Equals
+      invert: false
+      field: text
+      value: 3
+    contexts: []
+  - id: zTngvYkmU0GOLRTy54UCdg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 109
+    repeat: 1
+    type: Action
+    elementId: m0MLZZlNy0qRhhooJKaduw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Total_firmantes}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: Equals
+      invert: false
+      field: text
+      value: 3
+    contexts: []
+  - id: yIZ9rmfaY0WcuXWIRLeFyw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 110
+    repeat: 1
+    type: Addon
+    elementId: 9NXL7Ca4mE2L1Xk9W5N0rQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 7i7ugpUNpkej4ZOFJYYMcw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: attributeValue
+      value: '{{url_imagen_primera_firma}}'
+      direction: Output
+    - name: attributeName
+      value: src
+      direction: Input
+    conditions: []
+    validations:
+    - type: Starts
+      invert: false
+      field: attributeValue
+      value: data:image
+    contexts: []
+  - id: 7T2savaz_UWFNI692j4rdA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 111
+    repeat: 1
+    type: Addon
+    elementId: RdrXp9t6fUqIMAyXXwzdUA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 7i7ugpUNpkej4ZOFJYYMcw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: attributeValue
+      value: '{{url_sello_primera_firma}}'
+      direction: Output
+    - name: attributeName
+      value: src
+      direction: Input
+    conditions: []
+    validations:
+    - type: Starts
+      invert: false
+      field: attributeValue
+      value: data:image
+    contexts: []
+  - id: pzzop_6qlEqGgyaSlj1hBg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 112
+    repeat: 1
+    type: Addon
+    elementId: 4-qVT5aHs0K9Sr5a7cPw-Q
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 7i7ugpUNpkej4ZOFJYYMcw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: attributeValue
+      value: '{{url_imagen_segunda_firma}}'
+      direction: Output
+    - name: attributeName
+      value: src
+      direction: Input
+    conditions: []
+    validations:
+    - type: Starts
+      invert: false
+      field: attributeValue
+      value: data:image
+    contexts: []
+  - id: PHcjlvyE4UGZzBWZRG1F-g
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 113
+    repeat: 1
+    type: Addon
+    elementId: BCZCfbauq0KD3m0JJIFDrA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 7i7ugpUNpkej4ZOFJYYMcw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: attributeValue
+      value: '{{url_sello_segunda_firma}}'
+      direction: Output
+    - name: attributeName
+      value: src
+      direction: Input
+    conditions: []
+    validations:
+    - type: Starts
+      invert: false
+      field: attributeValue
+      value: data:image
+    contexts: []
+  - id: NQkadSJLKUqw2zIYkaCsmg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 114
+    repeat: 1
+    type: Addon
+    elementId: nspfo9p740iVKefhy7suSQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 7i7ugpUNpkej4ZOFJYYMcw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: attributeValue
+      value: '{{url_imagen_tercera_firma}}'
+      direction: Output
+    - name: attributeName
+      value: src
+      direction: Input
+    conditions: []
+    validations:
+    - type: Starts
+      invert: false
+      field: attributeValue
+      value: data:image
+    contexts: []
+  - id: r2ozymoMI0aXYNcwuyMb3g
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 115
+    repeat: 1
+    type: Addon
+    elementId: AHWjczTHD0-uwaU0bZB3Ww
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 7i7ugpUNpkej4ZOFJYYMcw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: attributeName
+      value: src
+      direction: Input
+    - name: attributeValue
+      value: '{{url_sello_tercera_firma}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: Starts
+      invert: false
+      field: attributeValue
+      value: data:image
+    contexts: []
+  - id: POPIiWm2j0mNqWwLy3bxtg
+    enabled: true
+    invertResult: false
+    order: 116
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: yip_Z3clwkWBd7axwNHMUw
+    enabled: true
+    invertResult: false
+    order: 117
+    repeat: 3
+    type: Action
+    elementId: CGrJMjo6l0SUWCsaiaptVg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: xJq-OSmu40WIX7fIUVbm_g
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 118
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 4000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: R19cFuXB6UWsO4icCuoTcg
+    enabled: true
+    invertResult: false
+    order: 119
+    repeat: 1
+    type: Action
+    elementId: eC2xpU1OAky3STDaWU8l0A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Correo_firmasCompletas_Firmante2}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: Equals
+      invert: false
+      field: text
+      value: Firmas Completas
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: Ozn_xeQAPUauFzTYSVkL_w
+    enabled: true
+    invertResult: false
+    order: 120
+    repeat: 1
+    type: Action
+    elementId: ZSa-UJfd6UC-GrU0ym3Wyw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: lbckXrxspkyuXghBtJiFSw
+    enabled: true
+    invertResult: false
+    order: 121
+    repeat: 1
+    type: Addon
+    elementId: ZSa-UJfd6UC-GrU0ym3Wyw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 7i7ugpUNpkej4ZOFJYYMcw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: attributeValue
+      value: '{{Pdf_adjunto_firmante2}}'
+      direction: Output
+    - name: attributeName
+      value: title
+      direction: Input
+    conditions: []
+    validations:
+    - type: Ends
+      invert: false
+      field: attributeValue
+      value: pdf
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: 0pI5-Kz970OW5yVM_n0j_Q
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 122
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: SFW6Rf9DW0G4jpBW38V4xw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: code
+      value: >-
+        var element_pricipal = document.getElementById("ifinbox");
+
+        var innerDoc = element_pricipal.contentDocument || element_pricipal.contentWindow.document;
+
+        var titles = innerDoc.getElementsByClassName("lmf");
+
+        console.log("1. La cantidad es " + titles.length);
+
+
+
+        for (index = 1; index < titles.length; index++) {
+
+            var title = titles[index].innerHTML;
+
+            if (title == "mifirma@olimpiait.com") {
+
+                titles[index].click();
+
+                break;
+
+            }
+
+        }
+      direction: Input
+    - name: args
+      value: ''
+      direction: Input
+    - name: output
+      value: ''
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: ra2cI6abLEOfYrynfROUhg
+    enabled: true
+    invertResult: false
+    order: 123
+    repeat: 1
+    type: Action
+    elementId: eC2xpU1OAky3STDaWU8l0A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Correo_documentoFirmado_Firmante2}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: Equals
+      invert: false
+      field: text
+      value: Documento Firmado
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: GmRz46wWhkK9B_yMRJIGVw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 124
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: zAoxUX5QtUGjvaaF-vv2mw
+    enabled: true
+    invertResult: false
+    order: 125
+    repeat: 1
+    type: Action
+    elementId: Q7X1M0psX0yU5gRh0nMzbg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: GhYpjsZxQ0mUv1h_lVH3rQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 126
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 511ddb4e-210f-4f3f-9fb9-b766bb23ee6a
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: jzCJmgfX8EyL64jfahnO6A
+    enabled: true
+    invertResult: false
+    order: 127
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{Email_firmante_1}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: vco9zun3_km0qd-NrJohrg
+    enabled: true
+    invertResult: false
+    order: 128
+    repeat: 1
+    type: Action
+    elementId: 7V8RLbzWS0OcGP__qoQLNQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 4EkoZjvCE0m8OamCGxnRVA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 129
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 4000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: PbTl7G8a6UWAyxoNmiQ3Fg
+    enabled: true
+    invertResult: false
+    order: 130
+    repeat: 1
+    type: Action
+    elementId: eC2xpU1OAky3STDaWU8l0A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Correo_firmasCompletas_Firmante1}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: Equals
+      invert: false
+      field: text
+      value: Firmas Completas
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: tXHOB8hvckKzFzpQiS7BxA
+    enabled: true
+    invertResult: false
+    order: 131
+    repeat: 1
+    type: Action
+    elementId: ZSa-UJfd6UC-GrU0ym3Wyw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: qdOJphEaEUiLRzZto_PBtw
+    enabled: true
+    invertResult: false
+    order: 132
+    repeat: 1
+    type: Addon
+    elementId: ZSa-UJfd6UC-GrU0ym3Wyw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 7i7ugpUNpkej4ZOFJYYMcw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: attributeValue
+      value: '{{Pdf_adjunto_firmante1}}'
+      direction: Output
+    - name: attributeName
+      value: title
+      direction: Input
+    conditions: []
+    validations:
+    - type: Ends
+      invert: false
+      field: attributeValue
+      value: pdf
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: ACMARTOmq0OjV6H86GqjsQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 133
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: SFW6Rf9DW0G4jpBW38V4xw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: code
+      value: >-
+        var element_pricipal = document.getElementById("ifinbox");
+
+        var innerDoc = element_pricipal.contentDocument || element_pricipal.contentWindow.document;
+
+        var titles = innerDoc.getElementsByClassName("lmf");
+
+        console.log("1. La cantidad es " + titles.length);
+
+
+
+        for (index = 1; index < titles.length; index++) {
+
+            var title = titles[index].innerHTML;
+
+            if (title == "mifirma@olimpiait.com") {
+
+                titles[index].click();
+
+                break;
+
+            }
+
+        }
+      direction: Input
+    - name: args
+      value: ''
+      direction: Input
+    - name: output
+      value: ''
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: WGWydNnuBEqvJZij77RZFw
+    enabled: true
+    invertResult: false
+    order: 134
+    repeat: 1
+    type: Action
+    elementId: eC2xpU1OAky3STDaWU8l0A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Correo_documentoFirmado_Firmante1}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: Equals
+      invert: false
+      field: text
+      value: Documento Firmado
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: dnBssvzlHkaw4KSdmVsfJQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 135
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Md-XMA9NW0G89xWusKv5FQ
+    enabled: true
+    invertResult: false
+    order: 136
+    repeat: 1
+    type: Action
+    elementId: Q7X1M0psX0yU5gRh0nMzbg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: WmgjaeFhSkqdvHv82vNI7w
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 137
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 511ddb4e-210f-4f3f-9fb9-b766bb23ee6a
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: gbFeQhbpk0u6UelEqljzPg
+    enabled: true
+    invertResult: false
+    order: 138
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '[[UsuarioCorreoElectronico_FlujoOtrosYo]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: x6hVQ5raQUe8Vf-7xjUktw
+    enabled: true
+    invertResult: false
+    order: 139
+    repeat: 1
+    type: Action
+    elementId: 7V8RLbzWS0OcGP__qoQLNQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: C3ve1YWWB06PFK6tqfpZFg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 140
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 4000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: iaK6Zeig2E64039egMJlaA
+    enabled: true
+    invertResult: false
+    order: 141
+    repeat: 1
+    type: Action
+    elementId: eC2xpU1OAky3STDaWU8l0A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Correo_firmasCompletas_Originador}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: Equals
+      invert: false
+      field: text
+      value: Firmas Completas
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: 8J1HdH0VSU-4Zds4N1rofg
+    enabled: true
+    invertResult: false
+    order: 142
+    repeat: 1
+    type: Action
+    elementId: ZSa-UJfd6UC-GrU0ym3Wyw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: 9CGQFP2AFUCKQZXsGhfsTA
+    enabled: true
+    invertResult: false
+    order: 143
+    repeat: 1
+    type: Addon
+    elementId: ZSa-UJfd6UC-GrU0ym3Wyw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 7i7ugpUNpkej4ZOFJYYMcw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: attributeValue
+      value: '{{Pdf_adjunto_originador}}'
+      direction: Output
+    - name: attributeName
+      value: title
+      direction: Input
+    conditions: []
+    validations:
+    - type: Ends
+      invert: false
+      field: attributeValue
+      value: pdf
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: m43vXQ2TeEaABL4KM0gjeA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 144
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: SFW6Rf9DW0G4jpBW38V4xw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: args
+      value: ''
+      direction: Input
+    - name: code
+      value: >-
+        var element_pricipal = document.getElementById("ifinbox");
+
+        var innerDoc = element_pricipal.contentDocument || element_pricipal.contentWindow.document;
+
+        var titles = innerDoc.getElementsByClassName("lmf");
+
+        console.log("1. La cantidad es " + titles.length);
+
+
+
+        for (index = 2; index < titles.length; index++) {
+
+            var title = titles[index].innerHTML;
+
+            if (title == "mifirma@olimpiait.com") {
+
+                titles[index].click();
+
+                break;
+
+            }
+
+        }
+      direction: Input
+    - name: output
+      value: ''
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: V7KBaIjUHUKLPxYazKufLw
+    enabled: true
+    invertResult: false
+    order: 145
+    repeat: 1
+    type: Action
+    elementId: eC2xpU1OAky3STDaWU8l0A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Correo_documentoFirmado_Originador}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: Equals
+      invert: false
+      field: text
+      value: Documento Firmado
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: MewQ0zT0CU6G8iHgWMfT_g
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 146
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: BYIV7iwY_ESYSPjMqvnTxA
+    enabled: true
+    invertResult: false
+    order: 147
+    repeat: 1
+    type: Action
+    elementId: Q7X1M0psX0yU5gRh0nMzbg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: SXH6zJjz3kWmVoy7OFYB2g
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 148
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 511ddb4e-210f-4f3f-9fb9-b766bb23ee6a
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: MPnyRruNykmKH9-8qnnlgg
+    enabled: true
+    invertResult: false
+    order: 149
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{Email_usuario_envio_copia}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: ZsLFcHOpx0SOgBAWjXxb4g
+    enabled: true
+    invertResult: false
+    order: 150
+    repeat: 1
+    type: Action
+    elementId: 7V8RLbzWS0OcGP__qoQLNQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Wu50bMikWE-Db4QXdHEOCA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 151
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 4000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 87fLpWoO7ES4dkOJb6MPDA
+    enabled: true
+    invertResult: false
+    order: 152
+    repeat: 1
+    type: Action
+    elementId: eC2xpU1OAky3STDaWU8l0A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Correo_usuario_envio_copia}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: aOFNXxJHckiD4czbsUdC0w
+    enabled: true
+    invertResult: false
+    order: 153
+    repeat: 1
+    type: Action
+    elementId: ZSa-UJfd6UC-GrU0ym3Wyw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: nf_sZarxkEuj2eCOq5RnHw
+    enabled: true
+    invertResult: false
+    order: 154
+    repeat: 1
+    type: Addon
+    elementId: ZSa-UJfd6UC-GrU0ym3Wyw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 7i7ugpUNpkej4ZOFJYYMcw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: attributeValue
+      value: '{{Pdf_adjunto_usuario_envio_copia}}'
+      direction: Output
+    - name: attributeName
+      value: title
+      direction: Input
+    conditions: []
+    validations:
+    - type: Ends
+      invert: false
+      field: attributeValue
+      value: pdf
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: A4MDbxPneE2ySHS9jq3CNg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 155
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: X-OjlO2AIkqkVdNzlHVFBQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 156
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6Cfge0QgaUyAK0P7f8jjeA
+      source: Store
+      addonId: aFWp2y4D5k6n8kKOGUMyDw
+    parameterMaps:
+    - name: outputParameter
+      value: '{{url_imagen_primera_firma}}'
+      direction: Output
+    - name: value
+      value: La imagen de firma del originador se encuentra en el documento
+      direction: Input
+    conditions:
+    - parameter: '{{url_imagen_primera_firma}}'
+      type: Starts
+      invert: false
+      value: data:image
+    validations: []
+    contexts: []
+  - id: b1g2yGYUdEiG3XfSyqJ_mg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 157
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6Cfge0QgaUyAK0P7f8jjeA
+      source: Store
+      addonId: aFWp2y4D5k6n8kKOGUMyDw
+    parameterMaps:
+    - name: outputParameter
+      value: '{{url_sello_primera_firma}}'
+      direction: Output
+    - name: value
+      value: El sello de firma del originador se encuentra en el documento
+      direction: Input
+    conditions:
+    - parameter: '{{url_sello_primera_firma}}'
+      type: Starts
+      invert: false
+      value: data:image
+    validations: []
+    contexts: []
+  - id: QJ-AGom1lU2aNPNt-vyBZw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 158
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6Cfge0QgaUyAK0P7f8jjeA
+      source: Store
+      addonId: aFWp2y4D5k6n8kKOGUMyDw
+    parameterMaps:
+    - name: outputParameter
+      value: '{{url_imagen_segunda_firma}}'
+      direction: Output
+    - name: value
+      value: La imagen de firma del primer firmante se encuentra en el documento
+      direction: Input
+    conditions:
+    - parameter: '{{url_imagen_segunda_firma}}'
+      type: Starts
+      invert: false
+      value: data:image
+    validations: []
+    contexts: []
+  - id: NoJk-GjHd025pCrOusKaMg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 159
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6Cfge0QgaUyAK0P7f8jjeA
+      source: Store
+      addonId: aFWp2y4D5k6n8kKOGUMyDw
+    parameterMaps:
+    - name: outputParameter
+      value: '{{url_sello_segunda_firma}}'
+      direction: Output
+    - name: value
+      value: El sello de firma del primer firmante se encuentra en el documento
+      direction: Input
+    conditions:
+    - parameter: '{{url_sello_segunda_firma}}'
+      type: Starts
+      invert: false
+      value: data:image
+    validations: []
+    contexts: []
+  - id: rQ7XrpNw00yzS7QkwapQwg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 160
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6Cfge0QgaUyAK0P7f8jjeA
+      source: Store
+      addonId: aFWp2y4D5k6n8kKOGUMyDw
+    parameterMaps:
+    - name: outputParameter
+      value: '{{url_imagen_tercera_firma}}'
+      direction: Output
+    - name: value
+      value: La imagen de firma del tercer firmante se encuentra en el documento
+      direction: Input
+    conditions:
+    - parameter: '{{url_imagen_tercera_firma}}'
+      type: Starts
+      invert: false
+      value: data:image
+    validations: []
+    contexts: []
+  - id: -xApTTtwHUGxBMaT5eLNCQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 161
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6Cfge0QgaUyAK0P7f8jjeA
+      source: Store
+      addonId: aFWp2y4D5k6n8kKOGUMyDw
+    parameterMaps:
+    - name: outputParameter
+      value: '{{url_sello_tercera_firma}}'
+      direction: Output
+    - name: value
+      value: El sello de firma del tercer firmante se encuentra en el documento
+      direction: Input
+    conditions:
+    - parameter: '{{url_sello_tercera_firma}}'
+      type: Starts
+      invert: false
+      value: data:image
+    validations: []
+    contexts: []
+  - id: MidJQpP6VUKi_9LbQv9ODA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 162
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6Cfge0QgaUyAK0P7f8jjeA
+      source: Store
+      addonId: aFWp2y4D5k6n8kKOGUMyDw
+    parameterMaps:
+    - name: outputParameter
+      value: '{{Solicitud_De_Firma_Firmante_1}}'
+      direction: Output
+    - name: value
+      value: Se encuentra el correo de solicitud de firma exitosamente para el primer firmante
+      direction: Input
+    conditions:
+    - parameter: '{{Solicitud_De_Firma_Firmante_1}}'
+      type: Starts
+      invert: false
+      value: Solicitud De Firma
+    validations: []
+    contexts: []
+  - id: 2gfOy_OriUqfYIRtAwFBOQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 163
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6Cfge0QgaUyAK0P7f8jjeA
+      source: Store
+      addonId: aFWp2y4D5k6n8kKOGUMyDw
+    parameterMaps:
+    - name: value
+      value: Se encuentra el correo de solicitud de firma para el segundo firmante, cumpliendo el flujo de cualquier orden
+      direction: Input
+    - name: outputParameter
+      value: '{{Solicitud_De_Firma_Firmante_2}}'
+      direction: Output
+    conditions:
+    - parameter: '{{Solicitud_De_Firma_Firmante_2}}'
+      type: Starts
+      invert: false
+      value: Solicitud De Firma
+    validations: []
+    contexts: []
+  - id: rI1kAWaFSUSRLe4luCXUaQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 164
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: b2Xgk7sX7ES_beHfNrexVg
+      source: Store
+      addonId: 5xTgapY7Q0mGOAy8eSnU5g
+    parameterMaps:
+    - name: values
+      value: '{{Codigo_OTP}},{{Solicitud_De_Firma_Firmante_1}},{{Solicitud_De_Firma_Firmante_2}},{{Estado_documento}},{{Total_firmantes}},{{Total_firmas}},{{url_imagen_primera_firma}},{{url_sello_primera_firma}},{{url_imagen_segunda_firma}},{{url_sello_segunda_firma}},{{url_imagen_tercera_firma}},{{url_sello_tercera_firma}},{{Correo_documentoFirmado_Originador}},{{Correo_firmasCompletas_Originador}},{{Pdf_adjunto_originador}},{{Correo_documentoFirmado_Firmante1}},{{Correo_firmasCompletas_Firmante1}},{{Pdf_adjunto_firmante1}},{{Correo_documentoFirmado_Firmante2}},{{Correo_firmasCompletas_Firmante2}},{{Pdf_adjunto_firmante2}},{{Correo_usuario_envio_copia}},{{Pdf_adjunto_usuario_envio_copia}}'
+      direction: Input
+    - name: names
+      value: Codigo OTP,Solicitud de Firma Usuario Firmante 1, Solicitud de Firma Usuario Firmante 2,Estado Documento,Total Firmantes,Total Firmas,Imagen de Firma del Usuario Originador,Sello de Firma del Usuario Originador,Imagen de Firma del Usuario Firmante 1,Sello de Firma del Usuario Firmante 1,Imagen de Firma del Usuario Firmante 2,Sello de Firma del Usuario Firmante 2,Correo Documento Firmado Usuario Originador,Correo Firmas Completas Usuario Originador,PDF Adjunto Usuario Originador,Correo Documento Firmado Usuario Firmante 1,Correo Firmas Completas Usuario Firmante 1,PDF Adjunto Usuario Firmante 1,Correo Documento Firmado Usuario Firmante 2,Correo Firmas Completas Usuario Firmante 2,PDF Adjunto Usuario Firmante 2,Correo Usuario Envio Copia, PDF Adjunto Usuario Envio Copia
+      direction: Input
+    - name: path
+      value: '[[Ruta_SaveFileCSV]]'
+      direction: Input
+    - name: fileName
+      value: ''
+      direction: Input
+    - name: delimiter
+      value: ''
+      direction: Input
+    - name: result
+      value: ''
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: url_imagen_segunda_firma
+    description: Su función es validar si el documento ha quedado con la imagen de firma correctamente
+    value: ''
+    type: Output
+  - name: url_sello_segunda_firma
+    description: Su función es validar si el documento ha quedado con el sello de firma correctamente
+    value: ''
+    type: Output
+  - name: url_sello_tercera_firma
+    description: Su función es validar si el documento ha quedado con el sello de firma correctamente
+    value: ''
+    type: Output
+  - name: url_imagen_tercera_firma
+    description: Su función es validar si el documento ha quedado con la imagen de firma correctamente
+    value: ''
+    type: Output
+  - name: Total_firmantes
+    description: Cantidad total de firmantes durante el flujo de solicitud de firma del documento
+    value: ''
+    type: Output
+  - name: Total_firmas
+    description: Cantidad total de firmas que estará ligada a la cantidad de firmantes
+    value: ''
+    type: Output
+  - name: Correo_documentoFirmado_Firmante2
+    description: Se verifica que haya llegado el correo que anuncia finalmente el documento firmado.
+    value: ''
+    type: Output
+  - name: Correo_firmasCompletas_Firmante1
+    description: ''
+    value: ''
+    type: Output
+  - name: Correo_documentoFirmado_Firmante1
+    description: ''
+    value: ''
+    type: Output
+  - name: Correo_firmasCompletas_Originador
+    description: ''
+    value: ''
+    type: Output
+  - name: Correo_documentoFirmado_Originador
+    description: ''
+    value: ''
+    type: Output
+  - name: Pdf_adjunto_firmante1
+    description: ''
+    value: ''
+    type: Output
+  - name: Solicitud_De_Firma_Firmante_2
+    description: Podremos validar que el cualquier orden de los firmantes se cumpla y sea enviada la solicitud de firma a sus correos
+    value: ''
+    type: Output
+  - name: Pdf_adjunto_originador
+    description: ''
+    value: ''
+    type: Output
+  - name: Correo_usuario_envio_copia
+    description: ''
+    value: ''
+    type: Output
+  - name: Pdf_adjunto_usuario_envio_copia
+    description: ''
+    value: ''
+    type: Output
+  - name: Solicitud_De_Firma_Firmante_1
+    description: Podremos validar que el orden de los firmantes se cumpla y sea enviada la solicitud de firma al correo
+    value: ''
+    type: Output
+  - name: Password_firmante_2
+    description: Contraseña del segundo firmante
+    type: Input
+  - name: Email_usuario_envio_copia
+    description: Este será un correo electrónico de un usuario al que le queremos hacer le envio de copia del documento cuando este ya este firmado por completo
+    value: brayandres1805@yopmail.com
+    type: Input
+  - name: url_sello_primera_firma
+    description: Su función es validar si el documento ha quedado con el sello de firma correctamente
+    value: ''
+    type: Output
+  - name: url_imagen_primera_firma
+    description: Su función es validar si el documento ha quedado con la imagen de firma correctamente
+    value: ''
+    type: Output
+  - name: Estado_documento
+    description: Se verifica el estado final del documento que este sea igual a 'Firmas completadas''
+    value: ''
+    type: Output
+  - name: Correo_firmasCompletas_Firmante2
+    description: Se verifica que haya llegado el correo que anuncia finalmente las firmas completadas
+    value: ''
+    type: Output
+  - name: Pdf_adjunto_firmante2
+    description: Tendremos la posibilidad de verificar que el documento haya quedado adjunto al correo final
+    value: ''
+    type: Output
+  - name: Email_firmante_1
+    description: Correo electrónico del primer firmante a quien se le solicita la firma del documento
+    value: kxiploiepy@yopmail.com
+    type: Input
+  - name: Password_firmante_1
+    description: Contraseña del primer usuario firmante.
+    type: Input
+  - name: Email_firmante_2
+    description: Correo electrónico del segundo firmante a quien se le solicita la firma del documento.
+    value: ynhjsykvee@yopmail.com
+    type: Input
+  - name: Codigo_OTP
+    description: ''
+    value: ''
+    type: Output
+auxTests:
+- id: v195zfsnJ0uQ0HdckzKF9A
+  name: Inicio de sesión - Login
+  description: Llevamos el proceso de ingreso de usuario y contraseña, para acceder a Mi Firma
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 0.1
+  creationDate: 2021-11-11T17:25:21.0000000
+  modificationDate: 2021-11-11T17:25:21.0000000
+  settings:
+    automationAssistant: true
+    appId: zCXBZ0EWr0C6dHTqV8WU0Q
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  steps:
+  - id: p1bZH3stdEG5F6-pI8ankQ
+    comments: Navigates the specified URL (Auto-generated)
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: https://app.mifirma.co/
+      direction: Input
+    conditions:
+    - parameter: '[[Ambiente]]'
+      type: Contains
+      invert: false
+      value: produccion
+    validations: []
+    contexts: []
+  - id: Z3FC2W-HVUSo6SSKUaBX6Q
+    comments: Navigates the specified URL (Auto-generated)
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: https://mifirmapru.olimpiait.com:6570/
+      direction: Input
+    conditions:
+    - parameter: '[[Ambiente]]'
+      type: Contains
+      invert: false
+      value: pruebas
+    validations: []
+    contexts: []
+  - id: zvftx4RH9kSVN_mfqFyMCw
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    elementId: T6_7QGmXJ0uRIeAJtcP7NQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{CorreoElectronico}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: buUZ4hOTtUKos2FEhwmFxg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Addon
+    elementId: Unln3Rdgu0mHJJfhtGgOvw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: c7OPWafS8kaFJUBVwrhoRw
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 26QXs0lZJEqlfZ1usrbqGQ
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    elementId: B1QxPalYKke7XTUrGxg4Iw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{ContrasenaUsuario}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: cztIX9ix1UC9TAuDof_ZxQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Addon
+    elementId: Unln3Rdgu0mHJJfhtGgOvw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: c7OPWafS8kaFJUBVwrhoRw
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: CorreoElectronico
+    description: ''
+    value: ''
+    type: Input
+  - name: ContrasenaUsuario
+    description: ''
+    value: ''
+    type: Input
+- id: 0_ZiIEFyPUWzB8b8_0xUhg
+  name: Flujo_Vaciar_Correo_Buzon_Yopmail
+  description: This test was auto generated from steps of the 'Flujo Otros y yo - Orden' test
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 1.0
+  creationDate: 2021-11-11T17:25:21.0000000
+  modificationDate: 2021-11-11T17:25:21.0000000
+  settings:
+    automationAssistant: true
+    appId: zCXBZ0EWr0C6dHTqV8WU0Q
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  steps:
+  - id: DMCD-CcE1U-ZndfUwVh-jA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: NpfgU8jAG06hFpu7NS4wUA
+      source: Store
+      addonId: 775wVW80X0u_jcJi9jfJxw
+    parameterMaps:
+    - name: URL
+      value: https://yopmail.com/es/
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: o1xXrL6LTEG4fmUF87Bttw
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: dxPb3xzwj06Ta95r0KSMHA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: rbIZexqT2UKaI_dNwA4jcA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 511ddb4e-210f-4f3f-9fb9-b766bb23ee6a
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 0PhrFjtv8kOwS2uUOyf-nA
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    elementId: r1hGa9haikCRW925YWuYjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{CorreoElectronicoUsuario}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 1Kyc3fevi0WTj6JRB7ctdg
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Action
+    elementId: 7V8RLbzWS0OcGP__qoQLNQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 3bqTe3ffK0C8yvQV0U-dTw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 1HkuibVlPkmTvfwHTIM4ig
+    enabled: true
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Action
+    elementId: lcnWM_X6dkOPpw5xZPJuEg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 838ppgYodU-1jpU14Tx_6Q
+    enabled: true
+    invertResult: false
+    order: 9
+    repeat: 1
+    type: Addon
+    elementId: oiPn8J6wF0SZ19SL7VLPKg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: U2veSbE9E0aIfg5GFB2HtQ
+      source: Store
+      addonId: inW2AJJ04ku45E9-RN2zqA
+    parameterMaps:
+    - name: timeout
+      value: ''
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Z5z3bTBSjUiUBmhTr9cXgQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 10
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: AlwaysPass
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 22Nw5UqP7EGqvQhuHT2kqg
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: pause
+      value: 1000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: krHZsE3iMkuQxdIpSTtLMw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 11
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 1000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 3zgiJ6yzgkKqqp1LNDDFTQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 12
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6cc71ddb-1aaf-433c-aa94-56d944aac433
+      source: System
+    parameterMaps:
+    - name: index
+      value: 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: rQOBAdc2nEuS5az-UdJSvg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 13
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 0
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: CorreoElectronicoUsuario
+    description: Necesario para vaciar el buzón de correos de cada uno de los usuarios que interactúan dentro del flujo de firma.
+    value: ''
+    type: Input
+- id: 3u_hW6rR6kG5GFnZ--y_HQ
+  name: Flujo_firma_documento_por_firmantes
+  description: This test was auto generated from steps of the 'Flujo Otros y yo' test
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 1.0
+  creationDate: 2021-11-11T17:25:21.0000000
+  modificationDate: 2021-11-11T17:25:21.0000000
+  settings:
+    automationAssistant: true
+    appId: zCXBZ0EWr0C6dHTqV8WU0Q
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  steps:
+  - id: 0QcZVJx5DUuOl-zfXDJHVw
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    elementId: pMRek-t5pk26_gQPMOqHcQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@id = 'ifmail']|//*[@name = 'ifmail']|/html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: sT3KEQQkOEW7z4wEwp5BvA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: yfWMdeASFE6KlQKf0_yZ1Q
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 2
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: h0NH_JsXqkOuYQx8phBCTQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: IJWRrbPwWkylfktHO0e-nw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    elementId: B1QxPalYKke7XTUrGxg4Iw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: a9ab4ae7-38ca-4451-a636-1b801a774503
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: R_LSEkQJ7EG7rYGGIkI1pg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Action
+    elementId: B1QxPalYKke7XTUrGxg4Iw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{Password_firmante}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: _M1bO3hMBkK6O1raQSCV-Q
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Addon
+    elementId: Unln3Rdgu0mHJJfhtGgOvw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: c7OPWafS8kaFJUBVwrhoRw
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: f3jZlU3ROEmvaiOqYlbs4w
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 0y9cTJCaRU2hE2y29uX_gg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 9
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 10000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 2w5itRm-ZEa39z0F9KHTtw
+    enabled: true
+    invertResult: false
+    order: 10
+    repeat: 1
+    type: Action
+    elementId: GG3vY6eAoEmypN-BShP4cg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: z0cgSHSO2kKuzSRlHlx6iw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 11
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 4000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: mfjJmNpFHUq5JdI4XNuOrA
+    enabled: true
+    invertResult: false
+    order: 12
+    repeat: 1
+    type: Action
+    elementId: BrJpv9POx0ia-RmAFAPvEQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: sXIVHDtoYU-AaocnT3xtTw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 13
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: eEzNIaQqtk2FYOiGwKFfhw
+    enabled: true
+    invertResult: false
+    order: 14
+    repeat: 1
+    type: Action
+    elementId: klBHgl0bJEelqMgYdneOYA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: _VnjtbbrrUm8wFaIv95JcQ
+    enabled: true
+    invertResult: false
+    order: 15
+    repeat: 1
+    type: Action
+    elementId: fZrYeGNmGkK9F1hYajmiVg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: UutUFyGFZEiOPh1GO2mGJQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 16
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 8000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: xnvCUM3yAUWfWd-63073AQ
+    enabled: true
+    invertResult: false
+    order: 17
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: fev18KHdUkWmBMrX3brbRw
+    enabled: true
+    invertResult: false
+    order: 18
+    repeat: 1
+    type: Action
+    elementId: CGrJMjo6l0SUWCsaiaptVg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: mhTGNPOk0EiBvB_fHCzVIg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 19
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: dQv4FNZ3VEObhOPCI-o40A
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 20
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: SFW6Rf9DW0G4jpBW38V4xw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: args
+      value: ''
+      direction: Input
+    - name: code
+      value: >-
+        var element_pricipal = document.getElementById("ifinbox");
+
+        var innerDoc = element_pricipal.contentDocument || element_pricipal.contentWindow.document;
+
+        var titles = innerDoc.getElementsByClassName("lmf");
+
+        console.log("1. La cantidad es " + titles.length);
+
+
+
+        for (index = 0; index < titles.length; index++) {
+
+            var title = titles[index].innerHTML;
+
+            if (title == "OlimpiaOTP@olimpiait.com") {
+
+                titles[index].click();
+
+                break;
+
+            }
+
+        }
+      direction: Input
+    - name: output
+      value: ''
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: e1mKyVrF0Uas40PAkRUTXQ
+    enabled: true
+    invertResult: false
+    order: 21
+    repeat: 1
+    type: Action
+    elementId: KMf5DThvpUyIVr1ypPu1tA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Codigo_OTP}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: /html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: Q-dgupLlL0mWNdhsj4gbdg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 22
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: m-qQBvkevU-16chbJbXNpg
+    enabled: true
+    invertResult: false
+    order: 23
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 2
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: cpmvtVAYnEOFskp_IBx-uw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 24
+    repeat: 1
+    type: Action
+    elementId: 7UFKLZJsQUS2Ssn7g2Ax-Q
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: c17s8-Cjv0-Y8EMa6bTe3w
+    enabled: true
+    invertResult: false
+    order: 25
+    repeat: 1
+    type: Action
+    elementId: 7UFKLZJsQUS2Ssn7g2Ax-Q
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{Codigo_OTP}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: pjjFXlEHbUWfaIKNAK6pgQ
+    enabled: true
+    invertResult: false
+    order: 26
+    repeat: 1
+    type: Action
+    elementId: iFEwSghvikiKcdFebp0M0Q
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 0UJO0hDEY0Sv3wiFVHMDsQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 27
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 6000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: vNKJGz4U4E6WOWvGOdahVg
+    enabled: true
+    invertResult: false
+    order: 28
+    repeat: 1
+    type: Action
+    elementId: lfnYreAcm02QzCE0sZnoNg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: VJECbaaFvUu4lPFUYlxZtg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 29
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 3000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: JI0dxRig30av72N-SWcgmA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 30
+    repeat: 1
+    type: Action
+    elementId: V13w_NYz_0m_jMeBBAansA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: c_a2mqnguEyfyD_ckidufA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 31
+    repeat: 1
+    type: Action
+    elementId: t2UzJWHPuUi9CVPYtLyQUQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: hEUFvR8Ep0-dHQiCt3oc1Q
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 32
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: xal1PL9TWUyyM_vh-LBFqQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 33
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6cc71ddb-1aaf-433c-aa94-56d944aac433
+      source: System
+    parameterMaps:
+    - name: index
+      value: 2
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: Codigo_OTP
+    description: ''
+    value: ''
+    type: Output
+  - name: Password_firmante
+    description: Contraseña de los usuarios firmantes.
+    type: Input
+elements:
+- id: T6_7QGmXJ0uRIeAJtcP7NQ
+  name: email
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: XPATH
+    value: //input
+    priority: 3
+  - name: XPATH
+    value: //input[@placeholder = 'Correo electrónico']
+    priority: 2
+  - name: CSSSELECTOR
+    value: "[name='email']"
+    priority: 1
+  - name: CSSSELECTOR
+    value: '#correo'
+    priority: 0
+  - name: XPATH
+    value: /html/body/app-root/app-layout/app-login-firmador/section/div[2]/div[2]/div/form/div[1]/input
+    priority: 4
+- id: m0MLZZlNy0qRhhooJKaduw
+  name: Total_firmantes
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-expediente/div/div[2]/div[1]/div[2]/div[1]/div[1]/span[2]
+    priority: 1
+  - name: XPATH
+    value: //div[2]/div[1]/div[1]/span[2]
+    priority: 0
+- id: AHWjczTHD0-uwaU0bZB3Ww
+  name: Sello_firma_3
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTI
+    name: Image
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[3]/div[3]//img[2]
+    priority: 0
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-expediente/div/div[2]/div[4]/div[3]/div[3]/div/img[2]
+    priority: 1
+- id: RdrXp9t6fUqIMAyXXwzdUA
+  name: Sello_firma_1
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTI
+    name: Image
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[1]/div[3]//img[2]
+    priority: 0
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-expediente/div/div[2]/div[4]/div[1]/div[3]/div/img[2]
+    priority: 1
+- id: BCZCfbauq0KD3m0JJIFDrA
+  name: Sello_firma_2
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTI
+    name: Image
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[2]/div[3]//img[2]
+    priority: 0
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-expediente/div/div[2]/div[4]/div[2]/div[3]/div/img[2]
+    priority: 1
+- id: 9NXL7Ca4mE2L1Xk9W5N0rQ
+  name: IMG_firma_1
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTI
+    name: Image
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[1]/div[3]//img[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-expediente/div/div[2]/div[4]/div[1]/div[3]/div/img[1]
+    priority: 1
+- id: 4-qVT5aHs0K9Sr5a7cPw-Q
+  name: IMG_firma_2
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTI
+    name: Image
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[2]/div[3]//img[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-expediente/div/div[2]/div[4]/div[2]/div[3]/div/img[1]
+    priority: 1
+- id: nspfo9p740iVKefhy7suSQ
+  name: IMG_firma_3
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTI
+    name: Image
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[3]/div[3]//img[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-expediente/div/div[2]/div[4]/div[3]/div[3]/div/img[1]
+    priority: 1
+- id: nrtHbd8BxE6ncXcqBhFMbw
+  name: Mi Carpeta Personal
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#btnCarpetaPersonal'
+    priority: 0
+  - name: XPATH
+    value: //a[. = ' Mi Carpeta Personal ']
+    priority: 1
+  - name: XPATH
+    value: //a[2]
+    priority: 2
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-menu/div/div/a[2]
+    priority: 3
+- id: lfnYreAcm02QzCE0sZnoNg
+  name: Finalizar_Firma_Documento
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //button
+    priority: 1
+  - name: XPATH
+    value: /html/body/app-root/app-layout/app-otros-firmantes/div/div/div[2]/button
+    priority: 2
+  - name: XPATH
+    value: //button[. = ' Finalizar ']
+    priority: 0
+- id: fZrYeGNmGkK9F1hYajmiVg
+  name: Firmo y Acepto
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-layout/app-otros-firmantes/section/div[1]/div/button
+    priority: 2
+  - name: XPATH
+    value: //button[. = ' Firmo y Acepto ']
+    priority: 0
+  - name: XPATH
+    value: //section/div[1]/div/button
+    priority: 1
+- id: BrJpv9POx0ia-RmAFAPvEQ
+  name: Seleccion_de_firma
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-layout/app-otros-firmantes/section/div[2]/div[1]/div[1]/button
+    priority: 1
+  - name: XPATH
+    value: //div[2]/div[1]/div/button
+    priority: 0
+- id: klBHgl0bJEelqMgYdneOYA
+  name: IMG_Firma_Firmantes
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTI
+    name: Image
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-layout/app-otros-firmantes/section/div[2]/div[1]/div[2]/app-signatures-list/div/div[1]/div/img
+    priority: 1
+  - name: XPATH
+    value: //div/div/img
+    priority: 0
+- id: GG3vY6eAoEmypN-BShP4cg
+  name: Revisar y Firmar
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-layout/app-otros-firmantes/div/div/div[2]/div/button
+    priority: 2
+  - name: XPATH
+    value: //div[2]/div/button
+    priority: 1
+  - name: XPATH
+    value: //button[. = ' Revisar y Firmar ']
+    priority: 0
+- id: pMRek-t5pk26_gQPMOqHcQ
+  name: Firmar Documento
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: XPATH
+    value: //p[4]/a
+    priority: 1
+  - name: XPATH
+    value: //a[. = ' Firmar Documento']
+    priority: 0
+  - name: XPATH
+    value: /html/body/main/div/div/div/table[2]/tbody/tr[2]/td/p[4]/a
+    priority: 2
+- id: t2UzJWHPuUi9CVPYtLyQUQ
+  name: Cerrar sesión
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/app-nav/section/div[2]/div[1]/ul/li[8]/button
+    priority: 2
+  - name: XPATH
+    value: //li[8]/button
+    priority: 1
+  - name: XPATH
+    value: //button[. = ' Cerrar sesión ']
+    priority: 0
+- id: V13w_NYz_0m_jMeBBAansA
+  name: Lista_opciones_superiores
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: //button/span[2]
+    priority: 0
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/app-nav/section/div[2]/div[1]/div/button[1]/span[2]
+    priority: 1
+- id: Q7X1M0psX0yU5gRh0nMzbg
+  name: Inicio_yopmail
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: XPATH
+    value: //a[. = 'Inicio']
+    priority: 0
+  - name: XPATH
+    value: //nav/div/a[1]
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[1]/header/div/nav/div[2]/a[1]
+    priority: 2
+- id: iA1JsAtznUaq-blRYqK2QA
+  name: Enviar
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //button[. = 'Enviar']
+    priority: 0
+  - name: XPATH
+    value: //app-finish-sign/div[2]/div/button
+    priority: 1
+  - name: XPATH
+    value: /html/body/ngb-modal-window/div/div/app-finish-sign/div[2]/div[2]/button
+    priority: 2
+- id: POYsnNubmE6bj_ZNLhvNPg
+  name: Este es un correo asignado para la pr...
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTM
+    name: Paragraph
+    source: System
+  locators:
+  - name: XPATH
+    value: //quill-editor//p
+    priority: 0
+  - name: XPATH
+    value: /html/body/ngb-modal-window/div/div/app-finish-sign/div[2]/div[1]/div[2]/form/quill-editor/div[2]/div[1]/p
+    priority: 1
+- id: KsY1rRpRBk6KitZ7mcoaMw
+  name: Asunto1
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#affair'
+    priority: 0
+  - name: XPATH
+    value: //input[@placeholder = 'Asunto']
+    priority: 1
+  - name: XPATH
+    value: //div[2]/div[1]/div[2]/div/input
+    priority: 2
+  - name: XPATH
+    value: /html/body/ngb-modal-window/div/div/app-finish-sign/div[2]/div[1]/div[2]/div/input
+    priority: 3
+- id: _P7tpIM3J0y3uO6t6hnNJQ
+  name: Total_firmas
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-expediente/div/div[2]/div[1]/div[2]/div[2]/div[1]/span[2]
+    priority: 1
+  - name: XPATH
+    value: //div[2]/div[2]/div[1]/span[2]
+    priority: 0
+- id: oiPn8J6wF0SZ19SL7VLPKg
+  name: Vaciar buzón de correo
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/div[1]/div/main/div[2]/div[1]/div/div[1]/div[1]/div/div[1]/button
+    priority: 2
+  - name: XPATH
+    value: //div[1]/div/div[1]/div[1]/div/div[1]/button
+    priority: 1
+  - name: XPATH
+    value: //button[. = 'Vaciar buzón de correo']
+    priority: 0
+- id: lcnWM_X6dkOPpw5xZPJuEg
+  name: Opciones_yopmail_correo
+  type:
+    id: jUwODgyNjAyNzk2NTk2MjQ
+    name: i
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[2]/div[1]/div/div[1]/div[1]/button/i
+    priority: 1
+  - name: XPATH
+    value: //i[. = '']
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[1]/div/main/div[2]/div[1]/div/div[1]/div[1]/button/i
+    priority: 2
+- id: 9sLtsYs1gEqrk4Kq4oYW0A
+  name: Añadir correo
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDM
+    name: Generic Web Element
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/ngb-modal-window/div/div/app-finish-sign/div[2]/div[1]/div[1]/mat-form-field/div/div[1]/div/mat-chip-list/div/input
+    priority: 3
+  - name: XPATH
+    value: //input[@placeholder = 'Añadir correo']
+    priority: 1
+  - name: CSSSELECTOR
+    value: '#mat-chip-list-input-0'
+    priority: 0
+  - name: XPATH
+    value: //mat-chip-list//input
+    priority: 2
+- id: PHvSjuJH3E6m0B3BpComvQ
+  name: Total_dias_recordatorio
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/ngb-modal-window/div/div/app-finish-sign/div[2]/div[1]/div[1]/div[2]/div/input[2]
+    priority: 1
+  - name: XPATH
+    value: //div[2]/div/input[2]
+    priority: 0
+- id: loko7PCcf0yq1axxwaLc6w
+  name: Total_dias_expiración
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/ngb-modal-window/div/div/app-finish-sign/div[2]/div[1]/div[1]/div[1]/div/input[2]
+    priority: 1
+  - name: XPATH
+    value: //div[1]/div/input[2]
+    priority: 0
+- id: ySA2puWazEaLVEGckm-ZTw
+  name: Acciones
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-repositorio/div[2]/div[2]/div[2]/div[1]/div[2]/button
+    priority: 1
+  - name: XPATH
+    value: //div[1]/div[2]/button
+    priority: 0
+- id: IRNljzWkPEq-yN1O8IXdiQ
+  name: Expediente
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTM
+    name: Paragraph
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-repositorio/div[2]/div[2]/div[2]/div[1]/div[2]/div[1]/div[6]/p
+    priority: 2
+  - name: XPATH
+    value: //p[. = 'Expediente']
+    priority: 0
+  - name: XPATH
+    value: //div[6]/p
+    priority: 1
+- id: iFEwSghvikiKcdFebp0M0Q
+  name: Finalizar
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //button[. = 'Finalizar']
+    priority: 0
+  - name: XPATH
+    value: //p/button
+    priority: 1
+  - name: XPATH
+    value: /html/body/ngb-modal-window/div/div/app-pin-firmador/div[3]/div/p[2]/button
+    priority: 2
+- id: 7UFKLZJsQUS2Ssn7g2Ax-Q
+  name: PIN1
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#PIN1'
+    priority: 0
+  - name: XPATH
+    value: //form//input
+    priority: 1
+  - name: XPATH
+    value: /html/body/ngb-modal-window/div/div/app-pin-firmador/div[3]/div/div/form/div/input
+    priority: 2
+- id: KMf5DThvpUyIVr1ypPu1tA
+  name: codigo_otp_en_yopmail
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTM
+    name: Paragraph
+    source: System
+  locators:
+  - name: XPATH
+    value: //p[2]
+    priority: 0
+  - name: XPATH
+    value: /html/body/main/div/div/div/table[2]/tbody/tr[2]/td/p[2]
+    priority: 1
+- id: 7V8RLbzWS0OcGP__qoQLNQ
+  name: Ingresar_email_yopmail
+  type:
+    id: jUwODgyNjAyNzk2NTk2MjQ
+    name: i
+    source: System
+  locators:
+  - name: XPATH
+    value: //i[. = '']
+    priority: 0
+  - name: XPATH
+    value: //button/i
+    priority: 1
+  - name: XPATH
+    value: /html/body/div/div[2]/main/div[3]/div/div[1]/div[2]/div/div/form/div/div/div[4]/button/i
+    priority: 2
+- id: r1hGa9haikCRW925YWuYjA
+  name: login
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: "[name='login']"
+    priority: 1
+  - name: XPATH
+    value: //input[@placeholder = 'Ingrese una dirección aquí']
+    priority: 2
+  - name: XPATH
+    value: //div[2]/div/input
+    priority: 3
+  - name: XPATH
+    value: /html/body/div/div[2]/main/div[3]/div/div[1]/div[2]/div/div/form/div/div/div[2]/div/input
+    priority: 4
+  - name: CSSSELECTOR
+    value: '#login'
+    priority: 0
+- id: qe6__S61IEypwpVxizFZJg
+  name: Firmar
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-firmador/div/div[2]/div[1]/div[2]/button
+    priority: 2
+  - name: XPATH
+    value: //button[. = ' Firmar ']
+    priority: 0
+  - name: XPATH
+    value: //div/div[1]/div[2]/button
+    priority: 1
+- id: QdajO3I61UCgMKPaFMwQgQ
+  name: Iniciales
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-firmador/div/div[1]/div/div[3]/div[2]/button[2]
+    priority: 2
+  - name: XPATH
+    value: //div[2]/button[2]
+    priority: 1
+  - name: XPATH
+    value: //button[. = 'Iniciales']
+    priority: 0
+- id: rH3vdPIiEUSR8HOOHlOHKA
+  name: IMG_Firma
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTI
+    name: Image
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-firmador/div/div[2]/app-signatures-list/div/div[1]/div/img
+    priority: 0
+- id: lNynkNiG0Ei2eBlB-qsOOw
+  name: input_file
+  description: ''
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDM
+    name: Generic Web Element
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-documentos/div/div[2]/div[2]/ngx-file-drop/div/div/input
+    priority: 2
+  - name: XPATH
+    value: //*[@id="drop"]/div/div/input
+    priority: 1
+  - name: CSSSELECTOR
+    value: '   #drop > div > div > input'
+    priority: 0
+- id: nje7vUV2LES74841tSw4VA
+  name: Firmar un Documento
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#btnFirmarDocumento'
+    priority: 0
+  - name: XPATH
+    value: //a[. = ' Firmar un Documento ']
+    priority: 1
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-menu/div/div/a[1]
+    priority: 3
+  - name: XPATH
+    value: //div/div/a[1]
+    priority: 2
+- id: B1QxPalYKke7XTUrGxg4Iw
+  name: contrasena1
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#contrasena'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='contrasena']"
+    priority: 1
+  - name: XPATH
+    value: //input[@placeholder = 'Contraseña']
+    priority: 2
+  - name: XPATH
+    value: //div[3]/input
+    priority: 3
+  - name: XPATH
+    value: /html/body/app-root/app-layout/app-login-password/section/div[2]/div[2]/div/form/div[3]/input
+    priority: 4
+- id: Unln3Rdgu0mHJJfhtGgOvw
+  name: btnContinuar
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //button[. = ' Continuar ']
+    priority: 1
+  - name: CSSSELECTOR
+    value: "[name='btnContinuar']"
+    priority: 0
+  - name: XPATH
+    value: /html/body/app-root/app-layout/app-login-firmador/section/div[2]/div[2]/div/form/div[3]/button
+    priority: 2
+- id: EWl-3TvVRU6CFtZ4i_JvbA
+  name: Estado_documento
+  description: ''
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDM
+    name: Generic Web Element
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#detailprint > div.document__info--details > div.document__items--top > div:nth-child(2) > span.item__text'
+    priority: 0
+  - name: XPATH
+    value: //*[@id="detailprint"]/div[1]/div[1]/div[2]/span[2]
+    priority: 1
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-expediente/div/div[2]/div[1]/div[1]/div[2]/span[2]
+    priority: 2
+- id: ZSa-UJfd6UC-GrU0ym3Wyw
+  name: PDF_adjunto_correo_documento_firmado
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: body > header > div.fl.pjs.yscrollbar > a
+    priority: 1
+  - name: XPATH
+    value: /html/body/header/div[4]/a
+    priority: 0
+- id: d0nRXVtzO0GHlJf68My1IA
+  name: check_recordatorio
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDk
+    name: Checkbox
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/ngb-modal-window/div/div/app-finish-sign/div[2]/div[1]/div[1]/div[2]/div/input[1]
+    priority: 1
+  - name: XPATH
+    value: //div[1]/div[1]/div[2]//input[1]
+    priority: 0
+- id: 5xcjOtmyP0uohjt4kquX5g
+  name: check_expiración
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDk
+    name: Checkbox
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[1]/div/input[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/ngb-modal-window/div/div/app-finish-sign/div[2]/div[1]/div[1]/div[1]/div/input[1]
+    priority: 1
+- id: EGA-6BGXZEerO4PH7TtvVg
+  name: Seleccion_firmante_2
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/div[3]/div[2]/div/div/div/mat-option[3]/span
+    priority: 1
+  - name: XPATH
+    value: //mat-option[3]/span
+    priority: 0
+- id: ATtoLia0TUCASsFuTG7vVQ
+  name: Firma
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-firmador/div/div[1]/div/div[3]/div[2]/button[1]
+    priority: 2
+  - name: XPATH
+    value: //div[3]/div[2]/button[1]
+    priority: 1
+  - name: XPATH
+    value: //button[. = 'Firma']
+    priority: 0
+- id: JK6ONMswKkmGN3cnr0SmgA
+  name: Seleccion_firmante_1
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: //mat-option[2]/span
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[3]/div[2]/div/div/div/mat-option[2]/span
+    priority: 1
+- id: fvTs9Nq410izjmBvxSH_-w
+  name: Lista_firmantes
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: //mat-select//div[2]
+    priority: 0
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-firmador/div/div[1]/div/div[2]/mat-select/div/div[2]
+    priority: 1
+- id: _OiHIHVfhE6GoSE05zMwtA
+  name: Correo electrónico2
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[2]/input[@placeholder = 'Correo electrónico']
+    priority: 0
+  - name: XPATH
+    value: //div[2]/input[2]
+    priority: 1
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-agregar-firmantes/section/div[2]/app-firmadorlargo/div/form/div/div[2]/input[2]
+    priority: 2
+- id: xPu8lq4JH0mW7rXtKRE1jw
+  name: Correo electrónico1
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[1]/input[@placeholder = 'Correo electrónico']
+    priority: 0
+  - name: XPATH
+    value: //div[1]/input[2]
+    priority: 1
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-agregar-firmantes/section/div[2]/app-firmadorlargo/div/form/div/div[1]/input[2]
+    priority: 2
+- id: N7Abt1yknk6ACi7gkQaZmQ
+  name: Nombre y apellido2
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[2]/input[@placeholder = 'Nombre y apellido']
+    priority: 0
+  - name: XPATH
+    value: //div[2]/input[1]
+    priority: 1
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-agregar-firmantes/section/div[2]/app-firmadorlargo/div/form/div/div[2]/input[1]
+    priority: 2
+- id: mIEctC_q7Eeoj2viJ2KWvw
+  name: Agregar firmante
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //button[. = ' Agregar firmante ']
+    priority: 0
+  - name: XPATH
+    value: //app-firmadorlargo//button
+    priority: 1
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-agregar-firmantes/section/div[2]/app-firmadorlargo/div/button
+    priority: 2
+- id: z1aZFWwjy0a_7Jo_nyUO7Q
+  name: Nombre y apellido1
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-agregar-firmantes/section/div[2]/app-firmadorlargo/div/form/div/div[1]/input[1]
+    priority: 2
+  - name: XPATH
+    value: //div[1]/input[1]
+    priority: 1
+  - name: XPATH
+    value: //div[1]/input[@placeholder = 'Nombre y apellido']
+    priority: 0
+- id: NjJoYvdaCUaNKTEf9Fhx7Q
+  name: btnFlujoOtrosYo
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/app-root/app-main-wrapper/div/div/app-agregar-firmantes/section/div[1]/div/button[2]
+    priority: 2
+  - name: XPATH
+    value: //section/div[1]//button[2]
+    priority: 1
+  - name: XPATH
+    value: //button[. = 'Otros y yo']
+    priority: 0
+- id: VZHJY5CZCk2XqY1iPmtYxw
+  name: Caja_Codigo_Otp
+  description: ''
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDM
+    name: Generic Web Element
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/ngb-modal-window/div/div/app-pin-firmador
+    priority: 1
+  - name: CSSSELECTOR
+    value: body > ngb-modal-window > div > div > app-pin-firmador
+    priority: 0
+- id: eC2xpU1OAky3STDaWU8l0A
+  name: Asunto_Correo_Yopmail
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/header/div[3]/div[1]
+    priority: 1
+  - name: XPATH
+    value: //div[3]/div[1]
+    priority: 0
+- id: CGrJMjo6l0SUWCsaiaptVg
+  name: Recargar_Bandeja_Correo_Yopmail
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/div[1]/div/main/div[2]/div[1]/div/div[1]/div[6]/button
+    priority: 3
+  - name: XPATH
+    value: //div[6]/button
+    priority: 2
+  - name: XPATH
+    value: //button[. = '']
+    priority: 1
+  - name: CSSSELECTOR
+    value: '#refresh'
+    priority: 0
+projectParameters:
+- id: 5zaH78MmrE25mWNyjTmzVw
+  name: Ruta_documentoPDF
+  description: Se necesitara la ruta de maquina local, donde esta ubicado el documento PDF que se dispondrá para realizar el flujo de firma.
+  value: C:\Users\brodriguez\Downloads\Prueba-Mifirma21.pdf
+- id: Ex2VjMsI20WVG-H4kQCWZQ
+  name: Ruta_SaveFileCSV
+  description: Ruta desde nuestra maquina local para poder guardar y ubicar nuestros archivos finales CSV, como evidencia adicional de la ejecución de las pruebas.
+  value: C:\Users\brodriguez\Desktop\Resultados MiFirma
+- id: 9afD3AB4IEyJH0poZFHSRg
+  name: UsuarioCorreoElectronico_FlujoOtrosYo
+  description: Correo electrónico de un usuario ya registrado en Mi Firma - Flujo Otros y Yo.
+  value: brayan.rodriguez48@yopmail.com
+- id: irPns2M1jUewCDkxjzj1bg
+  name: Contrasena_FlujoOtrosYo
+  description: Contraseña que estará ligada al usuario ya registrado en Mi Firma - Flujo Otros y Yo.
+  value: Brayan.2
+- id: Cuxs7XQrPU6_VOiIDHNUAQ
+  name: Ambiente
+  description: Necesario para conocer a cual ambiente queremos ejecutar los casos de pruebas, ya sea producción o pruebas.
+  value: produccion
+addons:
+- id: aFWp2y4D5k6n8kKOGUMyDw
+  source: Store
+  version: 1.0
+  actions:
+  - id: 6Cfge0QgaUyAK0P7f8jjeA
+    name: Set value to a parameter
+    description: Set '{{value}}' into {{outputParameter}}
+    className: SetParameterValue
+  minSdkLevel: 2
+  minSdkVersion: 0.56.0
+  sdkGeneration: 1
+  language: Java
+  hash: 5B71B31160005CC53F6484B63977712C1BEC277EAD5E50A543CB52B9976C7BAF
+- id: xQczalN7yUK6-wtFItRTLA
+  source: Store
+  version: 0.2
+  actions:
+  - id: eZDGTCUB_0CGCjtIljG-aA
+    name: Upload File using XPath
+    description: Upload a file to a specific element identifies by XPath
+    className: actions.UploadFileByXpathAction
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: 39D3E443B9616B96F04ACC3BA72CCDBE1F694FAF804F11C21FFDB959ECCFA0D3
+- id: Xey4bVsJQEODIUN7ssaJMg
+  source: Store
+  version: 1.1.9
+  actions:
+  - id: HUG3yrSV3E-lym9Tz0-2hg
+    name: Set attribute value
+    description: Set {{attributeName}} attribute value on {{element}}
+    className: io.testproject.addons.web.element.SetElementAttribute
+  - id: SFW6Rf9DW0G4jpBW38V4xw
+    name: Execute JavaScript
+    description: Execute JavaScript {{code}} with arguments {{args}}
+    className: io.testproject.addons.web.actions.ExecuteJavascript
+  - id: 7i7ugpUNpkej4ZOFJYYMcw
+    name: Get attribute value
+    description: Get {{attributeName}} attribute value on {{element}}
+    className: io.testproject.addons.web.element.GetElementAttribute
+  - id: 22Nw5UqP7EGqvQhuHT2kqg
+    name: Accept alert
+    description: Accept alert
+    className: io.testproject.addons.web.alert.AcceptAlert
+  minSdkLevel: 2
+  minSdkVersion: 0.63.1
+  sdkGeneration: 1
+  language: Java
+  hash: 2D35A7CE404CDBD8C628208C7BF6C79678E47DC6F249518E97AC68E19F0A0B6D
+- id: 9G7qW0nEqU60ObO6IXJshg
+  source: Store
+  version: 1.9
+  actions:
+  - id: c7OPWafS8kaFJUBVwrhoRw
+    name: Click (using JavaScript)
+    description: Click {{element}}
+    className: io.testproject.addon.jsactions.ClickAction
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: 391BA51B31B3A1CADC112A2DD7D674CCC8AA80895D1FB9B1A90928D01D0153F3
+- id: 5xTgapY7Q0mGOAy8eSnU5g
+  source: Store
+  version: 4.1
+  actions:
+  - id: b2Xgk7sX7ES_beHfNrexVg
+    name: Create a new CSV file
+    description: Create CSV file
+    className: Actions.CreateCSV
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: AB59C6043A65B86D3D7F1E0160464A18621054AF7C2A7FDE1690BC1F7A62F1AA
+- id: 775wVW80X0u_jcJi9jfJxw
+  source: Store
+  version: 0.6
+  actions:
+  - id: NpfgU8jAG06hFpu7NS4wUA
+    name: Open URL in New Tab
+    description: Open a URL in a new tab
+    className: NewTabAtURL
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: F31625A0D5FB4DA99C55BAE170047D94F81D08AC0EA8623AF682C4E335FAA18B
+- id: inW2AJJ04ku45E9-RN2zqA
+  source: Store
+  version: 2.10
+  actions:
+  - id: U2veSbE9E0aIfg5GFB2HtQ
+    name: Click if visible
+    description: Click {{element}} if it's visible
+    className: io.testproject.addon.ClickActions.ClickIfVisibleWeb
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: CB217F4B750B6C3441DDB87E262A5C710BB3891BAE1F68FFF01CF07AEB036675
