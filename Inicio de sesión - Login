@@ -1,0 +1,263 @@
+id: jYp28DuvfECPjfwpHcey0w
+projectId: pMTbqBsXcEO9XmbzOWMYTw
+projectName: Mi Firma_copy
+created: 2021-11-11T17:27:41.4385426Z
+protocol: 1
+tests:
+- id: v195zfsnJ0uQ0HdckzKF9A
+  name: Inicio de sesión - Login
+  description: Llevamos el proceso de ingreso de usuario y contraseña, para acceder a Mi Firma
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 0.1
+  creationDate: 2021-11-11T17:25:21.0000000
+  modificationDate: 2021-11-11T17:25:21.0000000
+  settings:
+    automationAssistant: true
+    appId: zCXBZ0EWr0C6dHTqV8WU0Q
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  application:
+    id: zCXBZ0EWr0C6dHTqV8WU0Q
+    name: Mi Firma
+    url: https://app.mifirma.co/
+    platform: Web
+  steps:
+  - id: p1bZH3stdEG5F6-pI8ankQ
+    comments: Navigates the specified URL (Auto-generated)
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: https://app.mifirma.co/
+      direction: Input
+    conditions:
+    - parameter: '[[Ambiente]]'
+      type: Contains
+      invert: false
+      value: produccion
+    validations: []
+    contexts: []
+  - id: Z3FC2W-HVUSo6SSKUaBX6Q
+    comments: Navigates the specified URL (Auto-generated)
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: https://mifirmapru.olimpiait.com:6570/
+      direction: Input
+    conditions:
+    - parameter: '[[Ambiente]]'
+      type: Contains
+      invert: false
+      value: pruebas
+    validations: []
+    contexts: []
+  - id: zvftx4RH9kSVN_mfqFyMCw
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    elementId: T6_7QGmXJ0uRIeAJtcP7NQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{CorreoElectronico}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: buUZ4hOTtUKos2FEhwmFxg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Addon
+    elementId: Unln3Rdgu0mHJJfhtGgOvw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: c7OPWafS8kaFJUBVwrhoRw
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 26QXs0lZJEqlfZ1usrbqGQ
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    elementId: B1QxPalYKke7XTUrGxg4Iw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{ContrasenaUsuario}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: cztIX9ix1UC9TAuDof_ZxQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Addon
+    elementId: Unln3Rdgu0mHJJfhtGgOvw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: c7OPWafS8kaFJUBVwrhoRw
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: CorreoElectronico
+    description: ''
+    value: ''
+    type: Input
+  - name: ContrasenaUsuario
+    description: ''
+    value: ''
+    type: Input
+auxTests: []
+elements:
+- id: T6_7QGmXJ0uRIeAJtcP7NQ
+  name: email
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: XPATH
+    value: //input
+    priority: 3
+  - name: XPATH
+    value: //input[@placeholder = 'Correo electrónico']
+    priority: 2
+  - name: CSSSELECTOR
+    value: "[name='email']"
+    priority: 1
+  - name: CSSSELECTOR
+    value: '#correo'
+    priority: 0
+  - name: XPATH
+    value: /html/body/app-root/app-layout/app-login-firmador/section/div[2]/div[2]/div/form/div[1]/input
+    priority: 4
+- id: B1QxPalYKke7XTUrGxg4Iw
+  name: contrasena1
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#contrasena'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='contrasena']"
+    priority: 1
+  - name: XPATH
+    value: //input[@placeholder = 'Contraseña']
+    priority: 2
+  - name: XPATH
+    value: //div[3]/input
+    priority: 3
+  - name: XPATH
+    value: /html/body/app-root/app-layout/app-login-password/section/div[2]/div[2]/div/form/div[3]/input
+    priority: 4
+- id: Unln3Rdgu0mHJJfhtGgOvw
+  name: btnContinuar
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //button[. = ' Continuar ']
+    priority: 1
+  - name: CSSSELECTOR
+    value: "[name='btnContinuar']"
+    priority: 0
+  - name: XPATH
+    value: /html/body/app-root/app-layout/app-login-firmador/section/div[2]/div[2]/div/form/div[3]/button
+    priority: 2
+projectParameters:
+- id: Cuxs7XQrPU6_VOiIDHNUAQ
+  name: Ambiente
+  description: Necesario para conocer a cual ambiente queremos ejecutar los casos de pruebas, ya sea producción o pruebas.
+  value: produccion
+addons:
+- id: 9G7qW0nEqU60ObO6IXJshg
+  source: Store
+  version: 1.9
+  actions:
+  - id: c7OPWafS8kaFJUBVwrhoRw
+    name: Click (using JavaScript)
+    description: Click {{element}}
+    className: io.testproject.addon.jsactions.ClickAction
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: 391BA51B31B3A1CADC112A2DD7D674CCC8AA80895D1FB9B1A90928D01D0153F3
