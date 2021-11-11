@@ -1,0 +1,473 @@
+id: _5XK1mLTfEG5xRS53YA3NA
+projectId: pMTbqBsXcEO9XmbzOWMYTw
+projectName: Mi Firma_copy
+created: 2021-11-11T17:27:41.4428105Z
+protocol: 1
+tests:
+- id: sZC664ryWkix6d-fIdSdRQ
+  name: 'Reenvió de código OTP '
+  description: This test was auto generated from steps of the 'Flujo Solo yo - Reenvio de código otp' test
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 1.0
+  creationDate: 2021-11-11T17:25:21.0000000
+  modificationDate: 2021-11-11T17:25:21.0000000
+  settings:
+    automationAssistant: true
+    appId: zCXBZ0EWr0C6dHTqV8WU0Q
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  application:
+    id: zCXBZ0EWr0C6dHTqV8WU0Q
+    name: Mi Firma
+    url: https://app.mifirma.co/
+    platform: Web
+  steps:
+  - id: Fkk64KLapk-FvsCujcxkYg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    elementId: KMf5DThvpUyIVr1ypPu1tA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Codigo_OTP}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: NotEquals
+      invert: false
+      field: text
+      value: '{{Codigo_OTP_Validacion}}'
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: /html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  - id: PQh_nveB2kST-U95HV6xCg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 0
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: UrKUyRrCaU2MJOhDX_DYfQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: tPrlTXEPXka-GYIH8ciueA
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    elementId: Pfm4nqGeXk2LfJxgd4qBjA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: ROJU6_-0tEaGUzgjuxp5EQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Addon
+    elementId: s1bBLRRvwUKn6aouLB6U8A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: DvmyABJEKEOo2-2rlbbNvg
+      source: Store
+      addonId: inW2AJJ04ku45E9-RN2zqA
+    parameterMaps:
+    - name: text
+      value: '{{Mensaje_Reenvios_Codigos_OTP}}'
+      direction: Output
+    - name: timeout
+      value: 4000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: bAtGArbrVUCOJJ8pBF23Ww
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 25000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: mKOOB7pn5kmqBHAVHeiIiQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: VjZvgXcmfEmltglawQizhQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Action
+    elementId: CGrJMjo6l0SUWCsaiaptVg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: -4OViaNFY0C4rlNAZza7bA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 9
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5ac5d621-7a53-45a6-94e5-a3348be3969e
+      source: System
+    parameterMaps:
+    - name: milliseconds
+      value: 2000
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 336FQ6lIy0aO3j05jjdYMA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 10
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6Cfge0QgaUyAK0P7f8jjeA
+      source: Store
+      addonId: aFWp2y4D5k6n8kKOGUMyDw
+    parameterMaps:
+    - name: value
+      value: '{{Codigo_OTP}}'
+      direction: Input
+    - name: outputParameter
+      value: '{{Codigo_OTP_Validacion}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 4Rv1PeQ0hk68uvWfmE3U3g
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 11
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: SFW6Rf9DW0G4jpBW38V4xw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: output
+      value: ''
+      direction: Output
+    - name: args
+      value: ''
+      direction: Input
+    - name: code
+      value: >-
+        var element_pricipal = document.getElementById("ifinbox");
+
+        var innerDoc = element_pricipal.contentDocument || element_pricipal.contentWindow.document;
+
+        var titles = innerDoc.getElementsByClassName("lmf");
+
+        console.log("1. La cantidad es " + titles.length);
+
+
+
+        for (index = 0; index < titles.length; index++) {
+
+            var title = titles[index].innerHTML;
+
+            if (title == "OlimpiaOTP@olimpiait.com") {
+
+                titles[index].click();
+
+                break;
+
+            }
+
+        }
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: -mrZOC_ZI0GUR85yjWT2Aw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 12
+    repeat: 1
+    type: Action
+    elementId: KMf5DThvpUyIVr1ypPu1tA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 225caec3-3231-45d5-a3f3-c4c59b7ab385
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Codigo_OTP}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: NotEquals
+      invert: false
+      field: text
+      value: '{{Codigo_OTP_Validacion}}'
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: /html/body/div[1]/div/main/div[2]/div[3]/div/div[1]/iframe
+  parameters:
+  - name: Codigo_OTP
+    description: Podremos validar que efectivamente se encuentre el codigo otp reenviado y para sus posteriores validaciones
+    value: ''
+    type: Output
+  - name: Codigo_OTP_Validacion
+    description: ''
+    value: ''
+    type: Output
+  - name: Mensaje_Reenvios_Codigos_OTP
+    description: Tendremos la posibilidad de validar el mensaje final que produce la aplicación por el máximo de intentos de reenvió del código OTP
+    value: ''
+    type: Output
+auxTests: []
+elements:
+- id: KMf5DThvpUyIVr1ypPu1tA
+  name: codigo_otp_en_yopmail
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTM
+    name: Paragraph
+    source: System
+  locators:
+  - name: XPATH
+    value: //p[2]
+    priority: 0
+  - name: XPATH
+    value: /html/body/main/div/div/div/table[2]/tbody/tr[2]/td/p[2]
+    priority: 1
+- id: s1bBLRRvwUKn6aouLB6U8A
+  name: Mensaje_Modal_Reenvio_OTP
+  description: ''
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/div[4]/div/div/div[1]
+    priority: 1
+  - name: XPATH
+    value: //div[. = ' Supero el máximo de reenvios ']
+    priority: 0
+- id: Pfm4nqGeXk2LfJxgd4qBjA
+  name: Reenviar código
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/ngb-modal-window/div/div/app-pin-firmador/div[3]/div/p[1]/span
+    priority: 2
+  - name: XPATH
+    value: //p/span
+    priority: 1
+  - name: XPATH
+    value: //span[. = 'Reenviar código']
+    priority: 0
+- id: CGrJMjo6l0SUWCsaiaptVg
+  name: Recargar_Bandeja_Correo_Yopmail
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/div[1]/div/main/div[2]/div[1]/div/div[1]/div[6]/button
+    priority: 3
+  - name: XPATH
+    value: //div[6]/button
+    priority: 2
+  - name: XPATH
+    value: //button[. = '']
+    priority: 1
+  - name: CSSSELECTOR
+    value: '#refresh'
+    priority: 0
+projectParameters: []
+addons:
+- id: aFWp2y4D5k6n8kKOGUMyDw
+  source: Store
+  version: 1.0
+  actions:
+  - id: 6Cfge0QgaUyAK0P7f8jjeA
+    name: Set value to a parameter
+    description: Set '{{value}}' into {{outputParameter}}
+    className: SetParameterValue
+  minSdkLevel: 2
+  minSdkVersion: 0.56.0
+  sdkGeneration: 1
+  language: Java
+  hash: 5B71B31160005CC53F6484B63977712C1BEC277EAD5E50A543CB52B9976C7BAF
+- id: Xey4bVsJQEODIUN7ssaJMg
+  source: Store
+  version: 1.1.9
+  actions:
+  - id: SFW6Rf9DW0G4jpBW38V4xw
+    name: Execute JavaScript
+    description: Execute JavaScript {{code}} with arguments {{args}}
+    className: io.testproject.addons.web.actions.ExecuteJavascript
+  minSdkLevel: 2
+  minSdkVersion: 0.63.1
+  sdkGeneration: 1
+  language: Java
+  hash: 2D35A7CE404CDBD8C628208C7BF6C79678E47DC6F249518E97AC68E19F0A0B6D
+- id: inW2AJJ04ku45E9-RN2zqA
+  source: Store
+  version: 2.10
+  actions:
+  - id: DvmyABJEKEOo2-2rlbbNvg
+    name: Get text (if visible)
+    description: Get text from {{element}} if it's visible
+    className: io.testproject.addon.GetTextActions.GetTextIfVisibleWeb
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: CB217F4B750B6C3441DDB87E262A5C710BB3891BAE1F68FFF01CF07AEB036675
