@@ -20,5 +20,5 @@ jobs:
           user-email: brayan.rodriguez@olimpiait.com
           commit-message: See ORIGIN_COMMIT from $GITHUB_REF
           target-branch: main
-      - name: Test get variable exported by push-to-another-repository
+      - name: Test get variable exported by MiFirma
         run: echo $DESTINATION_CLONED_DIRECTORY
