@@ -1,0 +1,11 @@
+name: Pushes to another repository
+        uses: TestProjectOlimpia/mi-firma@main
+        env:
+        commit-message: 'Enviado desde repo Brayan'
+          API_TOKEN_GITHUB: ${{ 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 }}
+        with:
+          source-directory: 'output'
+          destination-github-username: 'TestProjectOlimpia'
+          destination-repository-name: 'mi-firma'
+          user-email: brayan.rodriguez@olimpiait.com
+          target-branch: main
